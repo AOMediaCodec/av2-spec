@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AV2 Specification</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .version-section {
+            margin: 2rem 0;
+        }
+
+        .version-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .version-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .version-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .version-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+
+        .version-date {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .version-description {
+            color: #475569;
+            margin-bottom: 1rem;
+        }
+
+        .version-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+        }
+
+        .btn-secondary {
+            background-color: #64748b;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #475569;
+        }
+
+        .btn-outline {
+            background-color: white;
+            color: #3b82f6;
+            border: 1px solid #3b82f6;
+        }
+
+        .btn-outline:hover {
+            background-color: #eff6ff;
+        }
+
+        .notice {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .notice-title {
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 0.5rem;
+        }
+
+        .notice-content {
+            color: #78350f;
+        }
+
+        footer {
+            text-align: center;
+            color: #64748b;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        a {
+            color: #3b82f6;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .version-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .version-links {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AV2 Specification</h1>
+        <p class="subtitle">Alliance for Open Media - Codec Working Group</p>
+    </header>
+
+    <div class="content">
+        <section>
+            <h2>About AV2</h2>
+            <p>
+                AV2 is the next-generation video codec from the Alliance for Open Media (AOM),
+                designed to deliver significantly improved compression efficiency over AV1. This specification defines the bitstream syntax,
+                semantics, and decoding process for AV2.
+            </p>
+        </section>
+
+        <div class="notice">
+            <div class="notice-title">Notice</div>
+            <div class="notice-content">
+                This specification is currently in draft status. While we welcome feedback and issue reports,
+                please note that responses may be limited as this is a work-in-progress document.
+            </div>
+        </div>
+
+        <section class="version-section">
+            <h2>Available Versions</h2>
+
+            <div class="version-card">
+                <div class="version-header">
+                    <div class="version-name">v13-public</div>
+                    <div class="version-date">Public Release</div>
+                </div>
+                <div class="version-description">
+                    Public release candidate with enhanced syntax browser features including copy-to-clipboard
+                    functionality and improved layout.
+                </div>
+                <div class="version-links">
+                    <a href="v13-public/index.html" class="btn btn-primary">Full Specification</a>
+                    <a href="v13-public/syntax_browser.html" class="btn btn-secondary">Syntax Browser</a>
+                    <a href="v13-public/attachments/" class="btn btn-outline">Attachments</a>
+                </div>
+            </div>
+
+            <div class="version-card">
+                <div class="version-header">
+                    <div class="version-name">v13</div>
+                    <div class="version-date">December 23, 2025</div>
+                </div>
+                <div class="version-description">
+                    Development version with the latest specification updates and improvements.
+                </div>
+                <div class="version-links">
+                    <a href="v13/index.html" class="btn btn-primary">Full Specification</a>
+                    <a href="v13/syntax_browser.html" class="btn btn-secondary">Syntax Browser</a>
+                    <a href="v13/20251223_51117fb_AV2_Spec_Draft.pdf" class="btn btn-outline">PDF Download</a>
+                    <a href="v13/attachments/" class="btn btn-outline">Attachments</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Using the Specification</h2>
+            <h3>Full Specification</h3>
+            <p>
+                The complete specification document includes all sections from scope and definitions
+                through annexes. It provides comprehensive coverage of the AV2 codec format, syntax,
+                semantics, and decoding process.
+            </p>
+
+            <h3>Syntax Browser</h3>
+            <p>
+                The syntax browser provides a specialized view of Sections 5 (Syntax Structures) and
+                6 (Semantics) in a split-pane interface. Features include:
+            </p>
+            <ul>
+                <li>Side-by-side view of syntax definitions and their semantics</li>
+                <li>Synchronized scrolling between syntax and semantics</li>
+                <li>Search functionality across both sections</li>
+                <li>Copy-to-clipboard for syntax structures</li>
+                <li>Clickable syntax elements for easy navigation</li>
+            </ul>
+
+            <h3>Attachments</h3>
+            <p>
+                The attachments directory contains extracted lookup tables from Section 9 as C header files,
+                useful for implementation reference.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Alliance for Open Media. All rights reserved.</p>
+        <p>For more information, visit <a href="https://aomedia.org">aomedia.org</a></p>
+    </footer>
+</body>
+</html>
