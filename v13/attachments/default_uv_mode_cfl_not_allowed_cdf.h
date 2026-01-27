@@ -1,5 +1,0 @@
-Default_Uv_Mode_Cfl_Not_Allowed_Cdf
-    [ UV_MODE_CONTEXTS ][ CHROMA_MODE_COUNT + 1 ] = {
-  { 9363, 20957, 22865, 24753, 26411, 27983, 30428,  31, 0},
-  {21282, 23610, 28208, 29311, 30348, 31158, 31491,  30, 0}
-}
