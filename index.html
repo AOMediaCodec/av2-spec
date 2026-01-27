@@ -219,7 +219,7 @@
                     <div class="version-date">Public Release Candidate</div>
                 </div>
                 <div class="version-description">
-                    Release candidate based on the <a href="https://github.com/AOMediaCodec/av2-spec-internal/tree/v13-public">v13-public branch</a>,
+                    Release candidate based on the v13 tag with a few changes that are in the <a href="https://github.com/AOMediaCodec/av2-spec-internal/tree/v13-public">v13-public</a> branch,
                     featuring WGA header with approval date and enhanced syntax browser with copy-to-clipboard functionality and improved layout.
                 </div>
                 <div class="version-links">
@@ -227,22 +227,6 @@
                     <a href="v13-public/syntax_browser.html" class="btn btn-secondary">Syntax Browser</a>
                     <a href="v13-public/attachments/" class="btn btn-outline">Attachments</a>
                     <a href="https://gitlab.com/AOMediaCodec/avm/-/tree/research-v13.0.0?ref_type=tags" class="btn btn-primary">Software</a>
-                </div>
-            </div>
-
-            <div class="version-card">
-                <div class="version-header">
-                    <div class="version-name">v13</div>
-                    <div class="version-date">December 23, 2025</div>
-                </div>
-                <div class="version-description">
-                    Compiled specification based on the <a href="https://github.com/AOMediaCodec/av2-spec-internal/tree/v13">v13 tag</a>.
-                </div>
-                <div class="version-links">
-                    <a href="v13/index.html" class="btn btn-primary">Full Specification</a>
-                    <a href="v13/syntax_browser.html" class="btn btn-secondary">Syntax Browser</a>
-                    <a href="v13/20251223_51117fb_AV2_Spec_Draft.pdf" class="btn btn-outline">PDF Download</a>
-                    <a href="v13/attachments/" class="btn btn-outline">Attachments</a>
                 </div>
             </div>
         </section>
@@ -263,16 +247,23 @@
             </p>
             <ul>
                 <li>Side-by-side view of syntax definitions and their semantics</li>
-                <li>Synchronized scrolling between syntax and semantics</li>
+                <li>Clickable syntax elements for easy navigation</li>
                 <li>Search functionality across both sections</li>
                 <li>Copy-to-clipboard for syntax structures</li>
-                <li>Clickable syntax elements for easy navigation</li>
             </ul>
 
             <h3>Attachments</h3>
             <p>
                 The attachments directory contains extracted lookup tables from Section 9 as C header files,
                 useful for implementation reference.
+            </p>
+
+            <h3>Reference Software</h3>
+            <p>
+                The AV2 reference software implementation (AVM) corresponding to this specification is available
+                as the <a href="https://gitlab.com/AOMediaCodec/avm/-/tree/research-v13.0.0?ref_type=tags">research-v13.0.0</a> tag.
+                This reference encoder and decoder can be used to validate implementations and test conformance
+                with the specification.
             </p>
         </section>
     </div>
