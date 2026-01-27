@@ -1,0 +1,188 @@
+body {
+  counter-reset: figure-counter table-counter formula-counter;
+}
+
+figure {
+  counter-increment: figure-counter;
+}
+
+figure figcaption::before {
+  content: "Figure " counter(figure-counter) ": ";
+  font-weight: bold;
+}
+
+table {
+  counter-increment: table-counter;
+}
+
+table caption::before {
+  content: "Table " counter(table-counter) ": ";
+  font-weight: bold;
+}
+
+/* Manual table titles (no auto-numbering) */
+.table-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.table-bordered {
+  border: 1px solid #e9ecef;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #e9ecef;
+}
+
+.table-sm td, .table-sm th {
+  padding: .3rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05);
+}
+
+/* Table header styling */
+.table thead th {
+  background-color: #e9ecef;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.formula {
+  counter-increment: formula-counter;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.formula span {
+  display: inline;
+}
+
+.formula figcaption::before {
+  content: "Formula " counter(formula-counter) ": ";
+  font-weight: bold;
+  display: inline;
+}
+
+.reference {
+  font-weight: bold;
+}
+
+/* SDL Syntax Table Styles */
+.sdl-syntax-wrapper {
+  margin: 1em 0;
+  overflow-x: auto;
+}
+
+.sdl-syntax-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: #f8f9fa;
+  margin-bottom: 1rem;
+  counter-increment: none; /* Don't count SDL syntax tables as regular tables */
+}
+
+/* Table header */
+.sdl-syntax-table thead {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.sdl-syntax-table thead th {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.sdl-syntax-table thead th:last-child {
+  border-right: none;
+}
+
+/* Syntax name column header (left) */
+.sdl-syntax-table .sdl-syntax-name {
+  width: 85%;
+}
+
+/* Descriptor column header (right) - narrow */
+.sdl-syntax-table .sdl-descriptor-header {
+  width: 15%;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Table body */
+.sdl-syntax-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.sdl-syntax-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.sdl-syntax-table tbody td {
+  padding: 0.4rem 0.75rem;
+  vertical-align: middle;
+}
+
+/* All cells in the first column (syntax/code) get the border */
+.sdl-syntax-table tbody td:first-child {
+  border-right: 1px solid #ccc;
+}
+
+/* Descriptor column (right side) - narrow */
+.sdl-syntax-table .sdl-descriptor {
+  width: 15%;
+  min-width: 100px;
+  font-weight: normal;
+  color: #0066cc;
+  text-align: center;
+}
+
+/* Variable/syntax element column with descriptor (left side) - BOLD */
+.sdl-syntax-table .sdl-var-with-descriptor {
+  width: 85%;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+}
+
+/* Code lines without descriptors (full width) - NOT BOLD */
+.sdl-syntax-table .sdl-code {
+  font-weight: normal;
+  color: #333;
+  text-align: left;
+}
+
+/* Alternating row colors for better readability */
+.sdl-syntax-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.sdl-syntax-table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+/* Single-line comments */
+.sdl-syntax-table .sdl-comment {
+  color: #6a9955;
+  font-style: italic;
+  font-weight: normal;
+}
