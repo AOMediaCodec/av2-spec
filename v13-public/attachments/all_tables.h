@@ -1,5 +1,5 @@
 /*
- * AV2 Specification - All Additional Tables (Section 9)
+ * Draft AV2 Specification - All Additional Tables (Section 9)
  * Auto-generated combined header file
  *
  * This file contains 243 table definitions extracted from the
