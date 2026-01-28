@@ -16,12 +16,26 @@
         }
 
         header {
-            background: linear-gradient(135deg, #222d5f 0%, #6d71b5 100%);
-            color: white;
+            background: white;
+            color: #222d5f;
             padding: 2rem;
             border-radius: 8px;
             margin-bottom: 2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            border-bottom: 3px solid #12b17d;
+        }
+
+        .header-logo {
+            height: 60px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            flex: 1;
         }
 
         h1 {
@@ -31,7 +45,7 @@
 
         .subtitle {
             font-size: 1.1rem;
-            opacity: 0.9;
+            color: #6d71b5;
             margin: 0;
         }
 
@@ -237,6 +251,16 @@
                 padding: 1rem;
             }
 
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .header-logo {
+                height: 50px;
+            }
+
             h1 {
                 font-size: 2rem;
             }
@@ -258,8 +282,11 @@
 </head>
 <body>
     <header>
-        <h1>AV2 Specification</h1>
-        <p class="subtitle">Alliance for Open Media - Video Codec Working Group</p>
+        <img src="aomedia_logo_rgb.svg" alt="AOMedia Logo" class="header-logo">
+        <div class="header-content">
+            <h1>AV2 Specification</h1>
+            <p class="subtitle">Video Codec Working Group</p>
+        </div>
     </header>
 
     <div class="content">
