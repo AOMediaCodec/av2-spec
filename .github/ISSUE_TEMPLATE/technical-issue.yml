@@ -1,0 +1,80 @@
+name: Technical Issue
+description: Report errors, ambiguities, contradictions, or missing information in the specification
+labels: [technical]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first to avoid duplicates.
+
+        For AVM reference software issues, use the [GitLab issue tracker](https://gitlab.com/AOMediaCodec/avm/-/issues).
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      description: Which section(s) of the specification are affected?
+      options:
+        - Section 4 - Conventions
+        - Section 5 - Syntax Structures
+        - Section 6 - Semantics
+        - Section 7 - Decoding Process
+        - Section 8 - Parsing Process
+        - Section 9 - Additional Tables
+        - Annex A - Profiles and Levels
+        - Annex B - Length-delimited Bitstream Format
+        - Annex C - Error Resilience Behavior
+        - Annex D - Multi-stream Composition
+        - Annex E - Decoder Model
+        - Multiple sections
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Specific Location
+      description: 'Section number, equation ID, table name, or line reference'
+      placeholder: 'e.g., Section 7.2.3, Equation 5-12, Table obu_header_syntax'
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: release-notes
+    attributes:
+      label: Release Notes
+      options:
+        - label: I have checked the Release Notes for known issues
+          required: true
+
+  - type: checkboxes
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: Select all that apply
+      options:
+        - label: Incorrect syntax definition
+        - label: Semantic ambiguity
+        - label: Missing definition/explanation
+        - label: Contradictory statements
+        - label: Incorrect cross-reference
+        - label: Mathematical/formula error
+        - label: Algorithm unclear/incorrect
+        - label: Other
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's wrong? How does it affect correctness or implementation?
+      placeholder: Describe the technical issue in detail
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested Fix
+      description: What should it say instead? (optional)
+      placeholder: Propose a correction if you have one

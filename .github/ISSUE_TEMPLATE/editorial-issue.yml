@@ -1,0 +1,49 @@
+name: Editorial Issue
+description: Report typos, formatting, consistency issues, or broken links
+labels: [editorial]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For typos, formatting, and consistency issues. Please search existing issues first to avoid duplicates.
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Section, page, table, or element reference
+      placeholder: 'e.g., Section 5.3.2, Table 4-5, Annex A'
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: Select all that apply
+      options:
+        - label: Typo/spelling
+        - label: Grammar
+        - label: Formatting error
+        - label: Inconsistent terminology/naming
+        - label: Broken link/reference
+        - label: Missing cross-reference
+        - label: Table formatting issue
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be corrected?
+      placeholder: Describe the editorial issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-correction
+    attributes:
+      label: Suggested Correction
+      description: What should it say or look like?
+      placeholder: Provide the corrected text or formatting
+    validations:
+      required: true

@@ -1,0 +1,60 @@
+name: Syntax Browser Issue
+description: Report issues with the Syntax Browser tool (syntax_browser.html)
+labels: [tooling]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For issues specific to the Syntax Browser tool (syntax_browser.html).
+
+        For specification content issues, use the **Technical Issue** or **Editorial Issue** templates instead.
+
+  - type: checkboxes
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: Select all that apply
+      options:
+        - label: Navigation/links not working
+        - label: Syntax/semantics sections mismatched
+        - label: Search functionality broken
+        - label: Display/rendering problem
+        - label: Copy functionality not working
+        - label: Missing section(s)
+        - label: Incorrect scroll synchronization
+        - label: Other
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser/Environment
+      description: What browser and version are you using?
+      placeholder: 'e.g., Chrome 120, Firefox 121, Safari 17'
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's broken or not working as expected?
+      placeholder: Describe the problem in detail
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue? (if applicable)
+      placeholder: |
+        1. Go to syntax_browser.html
+        2. Click on...
+        3. See error...
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or Additional Context
+      description: You can paste screenshots here or provide additional information
+      placeholder: Drag and drop images or provide more details
