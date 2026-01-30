@@ -32,10 +32,12 @@
             height: 60px;
             width: auto;
             flex-shrink: 0;
+            order: 2;
         }
 
         .header-content {
             flex: 1;
+            order: 1;
         }
 
         h1 {
@@ -255,6 +257,14 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 1rem;
+            }
+
+            .header-logo {
+                order: 1;
+            }
+
+            .header-content {
+                order: 2;
             }
 
             .header-logo {
