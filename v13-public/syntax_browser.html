@@ -7,7 +7,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="Bikeshed version b25686b9f, updated Fri Mar 14 14:15:20 2025 -0700" name="generator"/>
-<meta content="cfd1e796f683ac2442f8a4d148dc51007aaed8fd" name="revision"/>
+<meta content="7181740c17c226dc6790f7f89196238c7cd63e49" name="revision"/>
 <link href="css/custom.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/syntax_browser.css">
 </head>
@@ -30,7 +30,7 @@
             <div class="spec-info">
                 <h1>AV2 Syntax Browser</h1>
                 <p class="spec-meta">AOM Working Group Draft, 5 January 2026</p>
-                <p class="spec-version"><strong>Version:</strong> v13-public@cfd1e79</p>
+                <p class="spec-version"><strong>Version:</strong> v13-public@7181740</p>
             </div>
             <button type="button" class="search-trigger" id="search-trigger" title="Search (⌘K or /)">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -3158,7 +3158,7 @@ It is a requirement of bitstream conformance that no value written into UserQm i
 </td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>where Fundamental_Tx_Size (which gives the order of quantization matrices) is specified as:</p>
-<div class="sdl-syntax-wrapper"> Fundamental_Tx_Size[ 3 ] = { TX_8X8, TX_8X4, TX_4X8 } </div>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Fundamental_Tx_Size</c-><c- p="">[</c-> <c- mi="">3</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-> <c- n="">TX_8X8</c-><c- p="">,</c-> <c- n="">TX_8X4</c-><c- p="">,</c-> <c- n="">TX_4X8</c-> <c- p="">}</c-></span></pre>
 <h4 class="heading settled" data-level="5.4.11" id="color_config_syntax"><span class="secno">5.4.11. </span><span class="content">Color config syntax</span><a class="self-link" href="#color_config_syntax"></a></h4>
 <div class="sdl-syntax-wrapper">
 <table class="sdl-syntax-table" data-original-syntax="color_config( ) {
@@ -6621,7 +6621,7 @@ Note: FilmGrainPresent is only used to specify a conformance constraint and does
             sar_height = Aspect_Ratio_Height[ aspect_ratio_idc ]
         }
 
-&lt;p bs-line-number=5912&gt;}
+&lt;p bs-line-number=5911&gt;}
     if ( timing_info_present_flag ) {
         timing_info()
     }&lt;/p&gt;
@@ -8345,7 +8345,7 @@ specified in § 7.2 Decode frame wrapup process should be invoked.">
                 save_grain_params( frame_to_show_map_idx )
             }
 
-&lt;p bs-line-number=6715&gt;TipFrameMode = TIP_FRAME_DISABLED
+&lt;p bs-line-number=6714&gt;TipFrameMode = TIP_FRAME_DISABLED
             return&lt;/p&gt;
         }
         if ( IsBridge ) {
@@ -11882,7 +11882,7 @@ When this function is invoked the segmentation map contained in PrevSegmentIds i
     return (primary,secondary)
 }
 
-&lt;p bs-line-number=8008&gt;is_ref_better(refDisp, bestDisp, refRatio, bestRatio) {
+&lt;p bs-line-number=8007&gt;is_ref_better(refDisp, bestDisp, refRatio, bestRatio) {
     d0 = Abs(get_relative_dist(OrderHint,refDisp)) - (refRatio &lt;&lt; 1)
     d1 = Abs(get_relative_dist(OrderHint,bestDisp)) - (bestRatio &lt;&lt; 1)
     if (d0 &lt; d1) {
@@ -14344,7 +14344,7 @@ segmentation map is coded without reference to the existing segmentation map.">
     MiColStarts[ TileCols ] = MiCols
     MiRowStarts[ TileRows ] = MiRows
 
-&lt;p bs-line-number=8940&gt;if ( (TileCols &gt; 1 || TileRows &gt; 1) &amp;&amp; !IsBridge &amp;&amp;
+&lt;p bs-line-number=8939&gt;if ( (TileCols &gt; 1 || TileRows &gt; 1) &amp;&amp; !IsBridge &amp;&amp;
          TipFrameMode != TIP_FRAME_AS_OUTPUT ) {
         if ( !enable_avg_cdf || !avg_cdf_type ) {
             f(TileRowsLog2 + TileColsLog2) context_update_tile_id;
@@ -14582,7 +14582,7 @@ TileSizeBytes specifies the number of bytes needed to code each tile size.">
     if ( uniform_tile_spacing_flag ) {
         sbShift = Mi_Width_Log2[ uniformSbSize ]
         
-&lt;p bs-line-number=9038&gt;tileColsLog2 = minLog2TileCols
+&lt;p bs-line-number=9037&gt;tileColsLog2 = minLog2TileCols
         if ( !isBridge ) {
             while ( tileColsLog2 &lt; maxLog2TileCols ) {
                 f(1) increment_tile_cols_log2;
@@ -14596,7 +14596,7 @@ TileSizeBytes specifies the number of bytes needed to code each tile size.">
         (sbColStarts, tileCols) = uniform_spacing( tileColsLog2, miCols, 
                                                    uniformSbSize )&lt;/p&gt;
         
-&lt;p bs-line-number=9052&gt;minLog2TileRows = Max( minLog2Tiles - tileColsLog2, 0)
+&lt;p bs-line-number=9051&gt;minLog2TileRows = Max( minLog2Tiles - tileColsLog2, 0)
         tileRowsLog2 = minLog2TileRows
         if ( !isBridge ) {
             while ( tileRowsLog2 &lt; maxLog2TileRows ) {
@@ -14624,14 +14624,14 @@ TileSizeBytes specifies the number of bytes needed to code each tile size.">
         tileCols = i
         tileColsLog2 = tile_log2(1, tileCols)
 
-&lt;p bs-line-number=9080&gt;if (minLog2Tiles &gt; 0) {
+&lt;p bs-line-number=9079&gt;if (minLog2Tiles &gt; 0) {
             maxTileAreaSb = (sbRows * sbCols) &gt;&gt; (minLog2Tiles + 1)
         } else {
             maxTileAreaSb = sbRows * sbCols
         }
         maxTileHeightSb = Max( maxTileAreaSb / widestTileSb, 1 )&lt;/p&gt;
 
-&lt;p bs-line-number=9087&gt;startSb = 0
+&lt;p bs-line-number=9086&gt;startSb = 0
         for ( i = 0; startSb &lt; sbRows; i++ ) {
             sbRowStarts[ i ] = startSb
             maxHeight = Min(sbRows - startSb, maxTileHeightSb)
@@ -14921,8 +14921,7 @@ maxTileHeightSb specifies the maximum height (in units of superblocks) that can 
 </div>
 <h4 class="heading settled" data-level="5.18.19" id="reuse_tile_params"><span class="secno">5.18.19. </span><span class="content">Reuse tile params function</span><a class="self-link" href="#reuse_tile_params"></a></h4>
 <div class="sdl-syntax-wrapper">
-<table class="sdl-syntax-table" data-original-syntax="reuse_tile_params( uniformSpacing, sbRowStarts, tileRows, tileRowsLog2, 
-                   sbColStarts, tileCols, tileColsLog2, seqSbSize, sbSize ) {
+<table class="sdl-syntax-table" data-original-syntax="reuse_tile_params( uniformSpacing, sbRowStarts, tileRows, tileRowsLog2, sbColStarts, tileCols, tileColsLog2, seqSbSize, sbSize ) {
     if ( uniformSpacing ) {
         sbShift = Mi_Width_Log2[ seqSbSize ]      
         (unifSbColStarts, tileCols) = uniform_spacing( tileColsLog2, MiCols,
@@ -14942,9 +14941,12 @@ maxTileHeightSb specifies the maximum height (in units of superblocks) that can 
 ">
 <thead>
 <tr>
-<th class="sdl-syntax-name">if ( uniformSpacing ) {
+<th class="sdl-syntax-name">reuse_tile_params( uniformSpacing, sbRowStarts, tileRows, tileRowsLog2, sbColStarts, tileCols, tileColsLog2, seqSbSize, sbSize ) {
        <th class="sdl-descriptor-header">Descriptor
      <tbody>
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">if ( uniformSpacing ) {</span>
+<td class="sdl-descriptor">
 <tr>
 <td class="sdl-code"><span style="padding-left: 2.0em;">sbShift = Mi_Width_Log2[ seqSbSize ]</span>
 <td class="sdl-descriptor">
@@ -14990,7 +14992,7 @@ maxTileHeightSb specifies the maximum height (in units of superblocks) that can 
 <tr>
 <td class="sdl-code"><span style="padding-left: 0.0em;">}</span>
 <td class="sdl-descriptor">
-</td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
+</td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <h4 class="heading settled" data-level="5.18.20" id="uniform_spacing_function"><span class="secno">5.18.20. </span><span class="content">Uniform spacing function</span><a class="self-link" href="#uniform_spacing_function"></a></h4>
 <div class="sdl-syntax-wrapper">
@@ -15704,7 +15706,7 @@ secondary filter.">
     }
     LoopRestorationSize[ 2 ] = LoopRestorationSize[ 1 ]
 
-&lt;p bs-line-number=9680&gt;for ( plane = 0; plane &lt; NumPlanes; plane++ ) {
+&lt;p bs-line-number=9679&gt;for ( plane = 0; plane &lt; NumPlanes; plane++ ) {
         if ( frame_filters_on[ plane ] &amp;&amp; !temporal_pred_flag[ plane ] ) {
             read_wienerns_filter(plane, 0, 0, 1)
         }
@@ -16164,14 +16166,7 @@ Note: This check ensures that restoration units do not cross internal tile bound
 <p>where the function get_filter_set_index is defined as:</p>
 <pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">get_filter_set_index</c-><c- p="">(</c-> <c- n="">base_qindex</c-> <c- p="">)</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- k="">if</c-> <c- p="">(</c-><c- n="">base_qindex</c-> <c- o="">&lt;</c-> <c- mi="">130</c-><c- p="">)</c-> <c- p="">{</c-></span><span class="line-no" data-line="3"></span><span class="line">        <c- k="">return</c-> <c- mi="">0</c-></span><span class="line-no" data-line="4"></span><span class="line">    <c- p="">}</c-> <c- k="">else</c-> <c- k="">if</c-> <c- p="">(</c-><c- n="">base_qindex</c-> <c- o="">&lt;</c-> <c- mi="">190</c-><c- p="">)</c-> <c- p="">{</c-></span><span class="line-no" data-line="5"></span><span class="line">        <c- k="">return</c-> <c- mi="">1</c-></span><span class="line-no" data-line="6"></span><span class="line">    <c- p="">}</c-> <c- k="">else</c-> <c- k="">if</c-> <c- p="">(</c-><c- n="">base_qindex</c-> <c- o="">&lt;</c-> <c- mi="">220</c-><c- p="">)</c-> <c- p="">{</c-></span><span class="line-no" data-line="7"></span><span class="line">        <c- k="">return</c-> <c- mi="">2</c-></span><span class="line-no" data-line="8"></span><span class="line">    <c- p="">}</c-> <c- k="">else</c-> <c- p="">{</c-></span><span class="line-no" data-line="9"></span><span class="line">        <c- k="">return</c-> <c- mi="">3</c-></span><span class="line-no" data-line="10"></span><span class="line">    <c- p="">}</c-></span><span class="line-no" data-line="11"></span><span class="line"><c- p="">}</c-></span></pre>
 <p>and the constant tables Decode_Num_Filter_Classes and Encode_Num_Filter_Classes are defined as:</p>
-<div class="sdl-syntax-wrapper">
-     Encode_Num_Filter_Classes[ 17 ] = {
-    0, 0, 1, 2, 3, 0, 4, 0, 5, 0, 0, 0, 6, 0, 0, 0, 7
-} 
-    <p>Decode_Num_Filter_Classes[ 8 ] = {
-    1, 2, 3, 4, 6, 8, 12, 16
-}</p>
-</div>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Encode_Num_Filter_Classes</c-><c- p="">[</c-> <c- mi="">17</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- mi="">0</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">1</c-><c- p="">,</c-> <c- mi="">2</c-><c- p="">,</c-> <c- mi="">3</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">4</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">5</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">6</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">7</c-></span><span class="line-no" data-line="3"></span><span class="line"><c- p="">}</c-></span><span class="line-no" data-line="4"></span><span class="line"></span><span class="line-no" data-line="5"></span><span class="line"><c- n="">Decode_Num_Filter_Classes</c-><c- p="">[</c-> <c- mi="">8</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="6"></span><span class="line">    <c- mi="">1</c-><c- p="">,</c-> <c- mi="">2</c-><c- p="">,</c-> <c- mi="">3</c-><c- p="">,</c-> <c- mi="">4</c-><c- p="">,</c-> <c- mi="">6</c-><c- p="">,</c-> <c- mi="">8</c-><c- p="">,</c-> <c- mi="">12</c-><c- p="">,</c-> <c- mi="">16</c-></span><span class="line-no" data-line="7"></span><span class="line"><c- p="">}</c-></span></pre>
 <h4 class="heading settled" data-level="5.18.27" id="ccso_params_syntax"><span class="secno">5.18.27. </span><span class="content">CCSO params syntax</span><a class="self-link" href="#ccso_params_syntax"></a></h4>
 <div class="sdl-syntax-wrapper">
 <table class="sdl-syntax-table" data-original-syntax="ccso_params( ) {
@@ -16551,9 +16546,7 @@ ccso_offset_idx is used to compute the sample offset by providing an index into 
 </td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>where Ccso_Offset is defined as:</p>
-<div class="sdl-syntax-wrapper"> Ccso_Offset[ 8 ] = { 
-    0, 1, -1, 3, -3, 7, -7, -10
-} </div>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Ccso_Offset</c-><c- p="">[</c-> <c- mi="">8</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-> </span><span class="line-no" data-line="2"></span><span class="line">    <c- mi="">0</c-><c- p="">,</c-> <c- mi="">1</c-><c- p="">,</c-> <c- mi="">-1</c-><c- p="">,</c-> <c- mi="">3</c-><c- p="">,</c-> <c- mi="">-3</c-><c- p="">,</c-> <c- mi="">7</c-><c- p="">,</c-> <c- mi="">-7</c-><c- p="">,</c-> <c- mi="">-10</c-></span><span class="line-no" data-line="3"></span><span class="line"><c- p="">}</c-></span></pre>
 <h4 class="heading settled" data-level="5.18.28" id="tx_mode_syntax"><span class="secno">5.18.28. </span><span class="content">TX mode syntax</span><a class="self-link" href="#tx_mode_syntax"></a></h4>
 <div class="sdl-syntax-wrapper">
 <table class="sdl-syntax-table" data-original-syntax="read_tx_mode( ) {
@@ -17111,26 +17104,9 @@ zoom global motion.">
 </td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>where Param_Shift, Param_Min, Param_Max, and scale_warp_model are defined as:</p>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Param_Shift</c-><c- p="">[</c-> <c- mi="">6</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- n="">GM_TRANS_PREC_DIFF</c-><c- p="">,</c->    <c- n="">GM_TRANS_PREC_DIFF</c-><c- p="">,</c->   <c- n="">GM_ALPHA_PREC_DIFF</c-><c- p="">,</c-></span><span class="line-no" data-line="3"></span><span class="line">    <c- n="">GM_ALPHA_PREC_DIFF</c-><c- p="">,</c->    <c- n="">GM_ALPHA_PREC_DIFF</c-><c- p="">,</c->   <c- n="">GM_ALPHA_PREC_DIFF</c-></span><span class="line-no" data-line="4"></span><span class="line"><c- p="">}</c-></span><span class="line-no" data-line="5"></span><span class="line"></span><span class="line-no" data-line="6"></span><span class="line"><c- n="">Param_Min</c-><c- p="">[</c-> <c- mi="">6</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-> </span><span class="line-no" data-line="7"></span><span class="line">    <c- n="">GM_TRANS_MIN</c-><c- p="">,</c->    <c- n="">GM_TRANS_MIN</c-><c- p="">,</c-></span><span class="line-no" data-line="8"></span><span class="line">    <c- n="">GM_ALPHA_MIN</c-><c- p="">,</c->    <c- n="">GM_ALPHA_MIN</c-><c- p="">,</c-></span><span class="line-no" data-line="9"></span><span class="line">    <c- n="">GM_ALPHA_MIN</c-><c- p="">,</c->    <c- n="">GM_ALPHA_MIN</c-></span><span class="line-no" data-line="10"></span><span class="line"><c- p="">}</c-></span><span class="line-no" data-line="11"></span><span class="line"></span><span class="line-no" data-line="12"></span><span class="line"><c- n="">Param_Max</c-><c- p="">[</c-> <c- mi="">6</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="13"></span><span class="line">    <c- n="">GM_TRANS_MAX</c-><c- p="">,</c->    <c- n="">GM_TRANS_MAX</c-><c- p="">,</c-></span><span class="line-no" data-line="14"></span><span class="line">    <c- n="">GM_ALPHA_MAX</c-><c- p="">,</c->    <c- n="">GM_ALPHA_MAX</c-><c- p="">,</c-></span><span class="line-no" data-line="15"></span><span class="line">    <c- n="">GM_ALPHA_MAX</c-><c- p="">,</c->    <c- n="">GM_ALPHA_MAX</c-></span><span class="line-no" data-line="16"></span><span class="line"><c- p="">}</c-></span></pre>
 <div class="sdl-syntax-wrapper">
-<p></p>
-<table class="sdl-syntax-table" data-original-syntax="Param_Shift[ 6 ] = {
-    GM_TRANS_PREC_DIFF,    GM_TRANS_PREC_DIFF,   GM_ALPHA_PREC_DIFF,
-    GM_ALPHA_PREC_DIFF,    GM_ALPHA_PREC_DIFF,   GM_ALPHA_PREC_DIFF
-}
-
-&lt;p bs-line-number=10333&gt;Param_Min[ 6 ] = {
-    GM_TRANS_MIN,    GM_TRANS_MIN,
-    GM_ALPHA_MIN,    GM_ALPHA_MIN,
-    GM_ALPHA_MIN,    GM_ALPHA_MIN
-}&lt;/p&gt;
-
-&lt;p bs-line-number=10339&gt;Param_Max[ 6 ] = {
-    GM_TRANS_MAX,    GM_TRANS_MAX,
-    GM_ALPHA_MAX,    GM_ALPHA_MAX,
-    GM_ALPHA_MAX,    GM_ALPHA_MAX
-}&lt;/p&gt;
-
-&lt;p bs-line-number=10345&gt;scale_warp_model(baseParams, baseDistance, dist) {
+<table class="sdl-syntax-table" data-original-syntax="scale_warp_model(baseParams, baseDistance, dist) {
     if ( baseDistance == 0 ) {
         return Default_Warp_Params
     }
@@ -18989,8 +18965,7 @@ In normal frames, syntax is parsed, so bru_mode is BRU_ACTIVE.">
 </div>
 <h4 class="heading settled" data-level="5.20.5" id="decode_partition_syntax"><span class="secno">5.20.5. </span><span class="content">Decode partition syntax</span><a class="self-link" href="#decode_partition_syntax"></a></h4>
 <div class="sdl-syntax-wrapper">
-<table class="sdl-syntax-table" data-original-syntax="decode_partition( r, c, bSize, parentSize, chromaOffset, hasChroma,
-                  extendedSdpAllowed ) {
+<table class="sdl-syntax-table" data-original-syntax="decode_partition( r, c, bSize, parentSize, chromaOffset, hasChroma, extendedSdpAllowed ) {
     if ( r &gt;= MiRows || c &gt;= MiCols ) {
         for ( y = 0; y &lt; Num_4x4_Blocks_High[ bSize ]; y++ ) {
             for ( x = 0; x &lt; Num_4x4_Blocks_Wide[ bSize ]; x++ ) {
@@ -19097,7 +19072,7 @@ In normal frames, syntax is parsed, so bru_mode is BRU_ACTIVE.">
             }
         }
 
-&lt;p bs-line-number=11360&gt;if ( TreeType == LUMA_PART &amp;&amp; parentSize == BLOCK_64X64 ) {
+&lt;p bs-line-number=11358&gt;if ( TreeType == LUMA_PART &amp;&amp; parentSize == BLOCK_64X64 ) {
             if ( partition == PARTITION_NONE ||
                 ( TopLumaHorz &amp;&amp; thisHorz ) ||
                 ( TopLumaVert &amp;&amp; thisVert ) ) {
@@ -19308,9 +19283,12 @@ information about a single chroma block.
 All blocks in this case will be intra blocks.">
 <thead>
 <tr>
-<th class="sdl-syntax-name">if ( r &gt;= MiRows || c &gt;= MiCols ) {
+<th class="sdl-syntax-name">decode_partition( r, c, bSize, parentSize, chromaOffset, hasChroma, extendedSdpAllowed ) {
        <th class="sdl-descriptor-header">Descriptor
      <tbody>
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">if ( r &gt;= MiRows || c &gt;= MiCols ) {</span>
+<td class="sdl-descriptor">
 <tr>
 <td class="sdl-code"><span style="padding-left: 2.0em;">for ( y = 0; y &lt; Num_4x4_Blocks_High[ bSize ]; y++ ) {</span>
 <td class="sdl-descriptor">
@@ -20088,7 +20066,7 @@ All blocks in this case will be intra blocks.">
 <tr>
 <td class="sdl-code"><span style="padding-left: 0.0em;">}</span>
 <td class="sdl-descriptor">
-</td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
+</td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>The function <code>is_bsize_allowed_for_extended_sdp</code> is defined as:</p>
 <div class="sdl-syntax-wrapper">
@@ -20179,32 +20157,9 @@ All blocks in this case will be intra blocks.">
 </td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <h4 class="heading settled" data-level="5.20.6" id="read_partition_syntax"><span class="secno">5.20.6. </span><span class="content">Read partition syntax</span><a class="self-link" href="#read_partition_syntax"></a></h4>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Rect_Part_Table</c-><c- p="">[</c-> <c- mi="">2</c-> <c- p="">][</c-> <c- mi="">2</c-> <c- p="">][</c-> <c- n="">NUM_UNEVEN_4WAY_PARTS</c-> <c- p="">][</c-> <c- n="">NUM_RECT_PARTS</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- p="">{</c-></span><span class="line-no" data-line="3"></span><span class="line">        <c- p="">{</c-></span><span class="line-no" data-line="4"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ</c-><c- p="">,</c-> <c- n="">PARTITION_VERT</c-> <c- p="">},</c-></span><span class="line-no" data-line="5"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ</c-><c- p="">,</c-> <c- n="">PARTITION_VERT</c-> <c- p="">},</c-></span><span class="line-no" data-line="6"></span><span class="line">        <c- p="">},</c-></span><span class="line-no" data-line="7"></span><span class="line">        <c- p="">{</c-></span><span class="line-no" data-line="8"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ</c-><c- p="">,</c-> <c- n="">PARTITION_VERT</c-> <c- p="">},</c-></span><span class="line-no" data-line="9"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ</c-><c- p="">,</c-> <c- n="">PARTITION_VERT</c-> <c- p="">},</c-></span><span class="line-no" data-line="10"></span><span class="line">        <c- p="">},</c-></span><span class="line-no" data-line="11"></span><span class="line">    <c- p="">},</c-></span><span class="line-no" data-line="12"></span><span class="line">    <c- p="">{</c-></span><span class="line-no" data-line="13"></span><span class="line">        <c- p="">{</c-></span><span class="line-no" data-line="14"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ_3</c-><c- p="">,</c-> <c- n="">PARTITION_VERT_3</c-> <c- p="">},</c-></span><span class="line-no" data-line="15"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ_3</c-><c- p="">,</c-> <c- n="">PARTITION_VERT_3</c-> <c- p="">},</c-></span><span class="line-no" data-line="16"></span><span class="line">        <c- p="">},</c-></span><span class="line-no" data-line="17"></span><span class="line">        <c- p="">{</c-></span><span class="line-no" data-line="18"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ_4A</c-><c- p="">,</c-> <c- n="">PARTITION_VERT_4A</c-> <c- p="">},</c-></span><span class="line-no" data-line="19"></span><span class="line">            <c- p="">{</c-> <c- n="">PARTITION_HORZ_4B</c-><c- p="">,</c-> <c- n="">PARTITION_VERT_4B</c-> <c- p="">},</c-></span><span class="line-no" data-line="20"></span><span class="line">        <c- p="">}</c-></span><span class="line-no" data-line="21"></span><span class="line">    <c- p="">}</c-></span><span class="line-no" data-line="22"></span><span class="line"><c- p="">}</c-></span></pre>
 <div class="sdl-syntax-wrapper">
-<p></p>
-<table class="sdl-syntax-table" data-original-syntax="Rect_Part_Table[ 2 ][ 2 ][ NUM_UNEVEN_4WAY_PARTS ][ NUM_RECT_PARTS ] = {
-    {
-        {
-            { PARTITION_HORZ, PARTITION_VERT },
-            { PARTITION_HORZ, PARTITION_VERT },
-        },
-        {
-            { PARTITION_HORZ, PARTITION_VERT },
-            { PARTITION_HORZ, PARTITION_VERT },
-        },
-    },
-    {
-        {
-            { PARTITION_HORZ_3, PARTITION_VERT_3 },
-            { PARTITION_HORZ_3, PARTITION_VERT_3 },
-        },
-        {
-            { PARTITION_HORZ_4A, PARTITION_VERT_4A },
-            { PARTITION_HORZ_4B, PARTITION_VERT_4B },
-        }
-    }
-}
-
-&lt;p bs-line-number=11830&gt;read_partition(r, c, bSize, chromaOffset, hasChroma) {
+<table class="sdl-syntax-table" data-original-syntax="read_partition(r, c, bSize, chromaOffset, hasChroma) {
     (implied,partition) = partition_implied(r, c, bSize)
     (numAllowed, allowed) = init_allowed_partitions( r, c, bSize,
                                                      chromaOffset, hasChroma )
@@ -24355,22 +24310,10 @@ negative.">
 </div>
 <p>where Reordered_Y_Mode, Default_Mode_List_Y, get_intra_y_mode_set, get_joint_mode,
 and allow_fsc_intra are defined as:</p>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Reordered_Y_Mode</c-><c- p="">[</c-> <c- n="">INTRA_MODES</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- n="">DC_PRED</c-><c- p="">,</c->   <c- n="">SMOOTH_PRED</c-><c- p="">,</c-> <c- n="">SMOOTH_V_PRED</c-><c- p="">,</c-> <c- n="">SMOOTH_H_PRED</c-><c- p="">,</c-> <c- n="">PAETH_PRED</c-><c- p="">,</c-></span><span class="line-no" data-line="3"></span><span class="line">    <c- n="">D45_PRED</c-><c- p="">,</c->  <c- n="">D67_PRED</c-><c- p="">,</c->    <c- n="">V_PRED</c-><c- p="">,</c->        <c- n="">D113_PRED</c-><c- p="">,</c->     <c- n="">D135_PRED</c-><c- p="">,</c-></span><span class="line-no" data-line="4"></span><span class="line">    <c- n="">D157_PRED</c-><c- p="">,</c-> <c- n="">H_PRED</c-><c- p="">,</c->      <c- n="">D203_PRED</c-></span><span class="line-no" data-line="5"></span><span class="line"><c- p="">}</c-></span><span class="line-no" data-line="6"></span><span class="line"></span><span class="line-no" data-line="7"></span><span class="line"><c- n="">Default_Mode_List_Y</c-><c- p="">[</c-> <c- n="">DIRECTIONAL_MODES_COUNT</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="8"></span><span class="line">    <c- mi="">17</c-><c- p="">,</c-> <c- mi="">45</c-><c- p="">,</c-> <c- mi="">3</c-><c- p="">,</c-> <c- mi="">10</c-><c- p="">,</c-> <c- mi="">24</c-><c- p="">,</c-> <c- mi="">31</c-><c- p="">,</c-> <c- mi="">38</c-><c- p="">,</c-> <c- mi="">52</c-><c- p="">,</c-></span><span class="line-no" data-line="9"></span><span class="line">    <c- mi="">15</c-><c- p="">,</c-> <c- mi="">19</c-><c- p="">,</c-> <c- mi="">43</c-><c- p="">,</c-> <c- mi="">47</c-><c- p="">,</c-> <c- mi="">1</c-><c- p="">,</c-> <c- mi="">5</c-><c- p="">,</c-> <c- mi="">8</c-><c- p="">,</c-> <c- mi="">12</c-><c- p="">,</c-> <c- mi="">22</c-><c- p="">,</c-> <c- mi="">26</c-><c- p="">,</c-> <c- mi="">29</c-><c- p="">,</c-> <c- mi="">33</c-><c- p="">,</c-> <c- mi="">36</c-><c- p="">,</c-> <c- mi="">40</c-><c- p="">,</c-> <c- mi="">50</c-><c- p="">,</c-> <c- mi="">54</c-><c- p="">,</c-></span><span class="line-no" data-line="10"></span><span class="line">    <c- mi="">16</c-><c- p="">,</c-> <c- mi="">18</c-><c- p="">,</c-> <c- mi="">44</c-><c- p="">,</c-> <c- mi="">46</c-><c- p="">,</c-> <c- mi="">2</c-><c- p="">,</c-> <c- mi="">4</c-><c- p="">,</c-> <c- mi="">9</c-><c- p="">,</c-> <c- mi="">11</c-><c- p="">,</c-> <c- mi="">23</c-><c- p="">,</c-> <c- mi="">25</c-><c- p="">,</c-> <c- mi="">30</c-><c- p="">,</c-> <c- mi="">32</c-><c- p="">,</c-> <c- mi="">37</c-><c- p="">,</c-> <c- mi="">39</c-><c- p="">,</c-> <c- mi="">51</c-><c- p="">,</c-> <c- mi="">53</c-><c- p="">,</c-></span><span class="line-no" data-line="11"></span><span class="line">    <c- mi="">14</c-><c- p="">,</c-> <c- mi="">20</c-><c- p="">,</c-> <c- mi="">42</c-><c- p="">,</c-> <c- mi="">48</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">,</c-> <c- mi="">6</c-><c- p="">,</c-> <c- mi="">7</c-><c- p="">,</c-> <c- mi="">13</c-><c- p="">,</c-> <c- mi="">21</c-><c- p="">,</c-> <c- mi="">27</c-><c- p="">,</c-> <c- mi="">28</c-><c- p="">,</c-> <c- mi="">34</c-><c- p="">,</c-> <c- mi="">35</c-><c- p="">,</c-> <c- mi="">41</c-><c- p="">,</c-> <c- mi="">49</c-><c- p="">,</c-> <c- mi="">55</c-></span><span class="line-no" data-line="12"></span><span class="line"><c- p="">}</c-></span></pre>
 <div class="sdl-syntax-wrapper">
 <p></p>
-<table class="sdl-syntax-table" data-original-syntax="Reordered_Y_Mode[ INTRA_MODES ] = {
-    DC_PRED,   SMOOTH_PRED, SMOOTH_V_PRED, SMOOTH_H_PRED, PAETH_PRED,
-    D45_PRED,  D67_PRED,    V_PRED,        D113_PRED,     D135_PRED,
-    D157_PRED, H_PRED,      D203_PRED
-}
-
-&lt;p bs-line-number=13841&gt;Default_Mode_List_Y[ DIRECTIONAL_MODES_COUNT ] = {
-    17, 45, 3, 10, 24, 31, 38, 52,
-    15, 19, 43, 47, 1, 5, 8, 12, 22, 26, 29, 33, 36, 40, 50, 54,
-    16, 18, 44, 46, 2, 4, 9, 11, 23, 25, 30, 32, 37, 39, 51, 53,
-    14, 20, 42, 48, 0, 6, 7, 13, 21, 27, 28, 34, 35, 41, 49, 55
-}&lt;/p&gt;
-
-&lt;p bs-line-number=13848&gt;get_joint_mode( dir ) {
+<table class="sdl-syntax-table" data-original-syntax="get_joint_mode( dir ) {
     if ( dir ) {
         mvRow = MiRow - 1
         mvCol = MiCol + Num_4x4_Blocks_Wide[ MiSize ] - 1
@@ -24382,9 +24325,9 @@ and allow_fsc_intra are defined as:</p>
         return IntraJointModes[ mvRow ][ mvCol ]
     }
     return DC_PRED
-}&lt;/p&gt;
+}
 
-&lt;p bs-line-number=13862&gt;get_intra_y_mode_set( modeIdx ) {
+&lt;p bs-line-number=13865&gt;get_intra_y_mode_set( modeIdx ) {
     if ( modeIdx &lt; NON_DIRECTIONAL_MODES_COUNT ) {
         return modeIdx
     }
@@ -24432,7 +24375,7 @@ and allow_fsc_intra are defined as:</p>
         }
     }&lt;/p&gt;
 
-&lt;p bs-line-number=13910&gt;for ( i = 0; i &lt; DIRECTIONAL_MODES_COUNT; i++ ) {
+&lt;p bs-line-number=13913&gt;for ( i = 0; i &lt; DIRECTIONAL_MODES_COUNT; i++ ) {
         mode = Default_Mode_List_Y[ i ]
         if ( !isDirSelected[ mode ] ) {
             if ( modeIdx == 0 ) {
@@ -24443,7 +24386,7 @@ and allow_fsc_intra are defined as:</p>
     }&lt;/p&gt;
 }
 
-&lt;p bs-line-number=13921&gt;allow_fsc_intra( ) {
+&lt;p bs-line-number=13924&gt;allow_fsc_intra( ) {
     w = Block_Width[ MiSize ]
     h = Block_Height[ MiSize ]
     return enable_idtx_intra &amp;&amp; w &lt;= FSC_MAX &amp;&amp; h &lt;= FSC_MAX
@@ -24932,15 +24875,10 @@ negative.">
 </td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>where Default_Mode_List_Uv, get_intra_uv_mode_set, and is_mhccp_allowed are defined as:</p>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Default_Mode_List_Uv</c-><c- p="">[</c-> <c- n="">UV_INTRA_MODES_CFL_NOT_ALLOWED</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- n="">DC_PRED</c-><c- p="">,</c-> <c- n="">SMOOTH_PRED</c-><c- p="">,</c-> <c- n="">SMOOTH_V_PRED</c-><c- p="">,</c-> <c- n="">SMOOTH_H_PRED</c-><c- p="">,</c-> <c- n="">PAETH_PRED</c-><c- p="">,</c-></span><span class="line-no" data-line="3"></span><span class="line">    <c- n="">V_PRED</c-><c- p="">,</c->   <c- n="">H_PRED</c-><c- p="">,</c->    <c- n="">D45_PRED</c-><c- p="">,</c->  <c- n="">D135_PRED</c-><c- p="">,</c-></span><span class="line-no" data-line="4"></span><span class="line">    <c- n="">D67_PRED</c-><c- p="">,</c-> <c- n="">D113_PRED</c-><c- p="">,</c-> <c- n="">D157_PRED</c-><c- p="">,</c-> <c- n="">D203_PRED</c-></span><span class="line-no" data-line="5"></span><span class="line"><c- p="">}</c-></span></pre>
 <div class="sdl-syntax-wrapper">
 <p></p>
-<table class="sdl-syntax-table" data-original-syntax="Default_Mode_List_Uv[ UV_INTRA_MODES_CFL_NOT_ALLOWED ] = {
-    DC_PRED, SMOOTH_PRED, SMOOTH_V_PRED, SMOOTH_H_PRED, PAETH_PRED,
-    V_PRED,   H_PRED,    D45_PRED,  D135_PRED,
-    D67_PRED, D113_PRED, D157_PRED, D203_PRED
-}
-
-&lt;p bs-line-number=14127&gt;get_intra_uv_mode_set( modeIdx ) {
+<table class="sdl-syntax-table" data-original-syntax="get_intra_uv_mode_set( modeIdx ) {
     if ( is_directional_mode( YMode ) ) {
         if ( modeIdx == 0 ) {
             return YMode
@@ -24956,9 +24894,9 @@ negative.">
             modeIdx -= 1
         }
     }
-}&lt;/p&gt;
+}
 
-&lt;p bs-line-number=14145&gt;is_mhccp_allowed( ) {
+&lt;p bs-line-number=14150&gt;is_mhccp_allowed( ) {
     planeSz = get_plane_residual_size( ChromaMiSize, 1 )
     if ( !enable_mhccp ) {
         return 0
@@ -25535,7 +25473,7 @@ delta value is negative.">
     return segmentation_enabled &amp;&amp; FeatureEnabled[ idx ][ feature ]
 }
 
-&lt;p bs-line-number=14477&gt;seg_feature_active( feature ) {
+&lt;p bs-line-number=14482&gt;seg_feature_active( feature ) {
     return seg_feature_active_idx( segment_id, feature )
 }
 ">
@@ -25874,7 +25812,7 @@ are marked unavailable for middle blocks.)">
         }
     }
     
-&lt;p bs-line-number=14676&gt;w4 = Tx_Width[ txSz ] / MI_SIZE
+&lt;p bs-line-number=14681&gt;w4 = Tx_Width[ txSz ] / MI_SIZE
     h4 = Tx_Height[ txSz ] / MI_SIZE
     if ( txPartition == TX_PARTITION_NONE ) {
         TxSize = set_tx_size(row, col, h4 , w4, 0, 0)
@@ -30767,7 +30705,7 @@ are specified as:</p>
     return 1
 }
 
-&lt;p bs-line-number=17081&gt;is_switchable_refinemv() {
+&lt;p bs-line-number=17086&gt;is_switchable_refinemv() {
     if ( YMode == NEAR_NEARMV || 
          (YMode == JOINT_NEWMV &amp;&amp; use_optflow &amp;&amp;
              opfl_refine_type == REFINE_SWITCHABLE)) {
@@ -30776,7 +30714,7 @@ are specified as:</p>
     return 1
 }&lt;/p&gt;
 
-&lt;p bs-line-number=17090&gt;is_refinemv_allowed_reference( refFrames ) {
+&lt;p bs-line-number=17095&gt;is_refinemv_allowed_reference( refFrames ) {
     if ( FrameType == SWITCH_FRAME ||
          is_scaled( refFrames[ 0 ], 1 ) || 
          is_scaled( refFrames[ 1 ], 1 ) ) {
@@ -32431,8 +32369,7 @@ If the block is wider or higher than 64 luma samples, then the residual is split
 </div>
 <h4 class="heading settled" data-level="5.20.46" id="transform_block_syntax"><span class="secno">5.20.46. </span><span class="content">Transform block syntax</span><a class="self-link" href="#transform_block_syntax"></a></h4>
 <div class="sdl-syntax-wrapper">
-<table class="sdl-syntax-table" data-original-syntax="transform_block( plane, baseX, baseY, txSz, x, y, allowCorners,
-                 doParse, doPred, doRecon, eob ) {
+<table class="sdl-syntax-table" data-original-syntax="transform_block( plane, baseX, baseY, txSz, x, y, allowCorners, doParse, doPred, doRecon, eob ) {
     startX = baseX + 4 * x
     startY = baseY + 4 * y
     subX = (plane &gt; 0) ? SubsamplingX : 0
@@ -32445,7 +32382,7 @@ If the block is wider or higher than 64 luma samples, then the residual is split
     row = ( startY &lt;&lt; subY ) &gt;&gt; MI_SIZE_LOG2
     col = ( startX &lt;&lt; subX ) &gt;&gt; MI_SIZE_LOG2
     
-&lt;p bs-line-number=17959&gt;if (plane == 0 || !is_cctx_allowed()) {
+&lt;p bs-line-number=17963&gt;if (plane == 0 || !is_cctx_allowed()) {
         if ( doPred ) {
             make_intra_prediction(plane,startX,startY,txSz,x,y,allowCorners)
         }
@@ -32483,7 +32420,7 @@ If the block is wider or higher than 64 luma samples, then the residual is split
                                        allowCorners)
             }&lt;/p&gt;
 
-&lt;p bs-line-number=17997&gt;if ( doRecon &amp;&amp; !skip_flag ) {
+&lt;p bs-line-number=18001&gt;if ( doRecon &amp;&amp; !skip_flag ) {
                 planeEob = CctxEobs[ p ]
                 if ( planeEob &gt; 0 || cctx_type != CCTX_NONE ) {
                     get_dequant(p, txSz, cctx_type)
@@ -32513,9 +32450,30 @@ LoopfilterTxSizes[ plane ][ row ][ col ] stores the transform size where row and
 Note: The transform size is always equal for planes 1 and 2.">
 <thead>
 <tr>
-<th class="sdl-syntax-name">if ( startX &gt;= maxX || startY &gt;= maxY ) {
+<th class="sdl-syntax-name">transform_block( plane, baseX, baseY, txSz, x, y, allowCorners, doParse, doPred, doRecon, eob ) {
        <th class="sdl-descriptor-header">Descriptor
      <tbody>
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">startX = baseX + 4 * x</span>
+<td class="sdl-descriptor">
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">startY = baseY + 4 * y</span>
+<td class="sdl-descriptor">
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">subX = (plane &gt; 0) ? SubsamplingX : 0</span>
+<td class="sdl-descriptor">
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">subY = (plane &gt; 0) ? SubsamplingY : 0</span>
+<td class="sdl-descriptor">
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">maxX = (MiCols * MI_SIZE) &gt;&gt; subX</span>
+<td class="sdl-descriptor">
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">maxY = (MiRows * MI_SIZE) &gt;&gt; subY</span>
+<td class="sdl-descriptor">
+<tr>
+<td class="sdl-code"><span style="padding-left: 1.0em;">if ( startX &gt;= maxX || startY &gt;= maxY ) {</span>
+<td class="sdl-descriptor">
 <tr>
 <td class="sdl-code"><span style="padding-left: 2.0em;">return 0</span>
 <td class="sdl-descriptor">
@@ -32675,7 +32633,7 @@ Note: The transform size is always equal for planes 1 and 2.">
 <tr>
 <td class="sdl-code"><span style="padding-left: 0.0em;">}</span>
 <td class="sdl-descriptor">
-</td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
+</td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>The function store_tx_info is defined as:</p>
 <div class="sdl-syntax-wrapper">
@@ -33030,7 +32988,7 @@ Note: The transform size is always equal for planes 1 and 2.">
     return numTopRight
 }
 
-&lt;p bs-line-number=18250&gt;count_bottom_left_avail(plane, x4, y4, h4) {
+&lt;p bs-line-number=18261&gt;count_bottom_left_avail(plane, x4, y4, h4) {
     numBottomLeft = 0
     for ( i = 0; i &lt; h4; i++ ) {
         if ( BlockDecoded[ plane ][ y4 + h4 + i ][ x4 - 1 ] ) {
@@ -34588,16 +34546,7 @@ counted as a separate sign).">
 </td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></td></td></tr></tbody></th></th></tr></thead></table>
 </div>
 <p>and <code>Tcq_Next_State</code> (which updates the <a data-link-type="dfn" href="#tcq" id="ref-for-tcq">TCQ</a> state based on the current state and parity) is defined as:</p>
-<div class="sdl-syntax-wrapper"> Tcq_Next_State[ 8 ][ 2 ] = {
-    {0, 4},
-    {4, 0},
-    {1, 5},
-    {5, 1},
-    {6, 2},
-    {2, 6},
-    {7, 3},
-    {3, 7}
-} </div>
+<pre class="language-c highlight line-numbered"><span class="line-no" data-line="1"></span><span class="line"><c- n="">Tcq_Next_State</c-><c- p="">[</c-> <c- mi="">8</c-> <c- p="">][</c-> <c- mi="">2</c-> <c- p="">]</c-> <c- o="">=</c-> <c- p="">{</c-></span><span class="line-no" data-line="2"></span><span class="line">    <c- p="">{</c-><c- mi="">0</c-><c- p="">,</c-> <c- mi="">4</c-><c- p="">},</c-></span><span class="line-no" data-line="3"></span><span class="line">    <c- p="">{</c-><c- mi="">4</c-><c- p="">,</c-> <c- mi="">0</c-><c- p="">},</c-></span><span class="line-no" data-line="4"></span><span class="line">    <c- p="">{</c-><c- mi="">1</c-><c- p="">,</c-> <c- mi="">5</c-><c- p="">},</c-></span><span class="line-no" data-line="5"></span><span class="line">    <c- p="">{</c-><c- mi="">5</c-><c- p="">,</c-> <c- mi="">1</c-><c- p="">},</c-></span><span class="line-no" data-line="6"></span><span class="line">    <c- p="">{</c-><c- mi="">6</c-><c- p="">,</c-> <c- mi="">2</c-><c- p="">},</c-></span><span class="line-no" data-line="7"></span><span class="line">    <c- p="">{</c-><c- mi="">2</c-><c- p="">,</c-> <c- mi="">6</c-><c- p="">},</c-></span><span class="line-no" data-line="8"></span><span class="line">    <c- p="">{</c-><c- mi="">7</c-><c- p="">,</c-> <c- mi="">3</c-><c- p="">},</c-></span><span class="line-no" data-line="9"></span><span class="line">    <c- p="">{</c-><c- mi="">3</c-><c- p="">,</c-> <c- mi="">7</c-><c- p="">}</c-></span><span class="line-no" data-line="10"></span><span class="line"><c- p="">}</c-></span></pre>
 <h4 class="heading settled" data-level="5.20.50" id="read_quant_syntax"><span class="secno">5.20.50. </span><span class="content">Read quantized coefficient syntax</span><a class="self-link" href="#read_quant_syntax"></a></h4>
 <div class="sdl-syntax-wrapper">
 <table class="sdl-syntax-table" data-original-syntax="read_quant(level, pos, isHidden, maxLevel, hrLevelAvg, allowTcq ) {
@@ -34822,7 +34771,7 @@ coeff_rem specifies the values of the extra bits.">
     return txType
 }
 
-&lt;p bs-line-number=19144&gt;is_tx_type_in_set( txSet, txType ) {
+&lt;p bs-line-number=19154&gt;is_tx_type_in_set( txSet, txType ) {
     return is_inter ? Tx_Type_In_Set_Inter[ txSet ][ txType ] :
                       Tx_Type_In_Set_Intra[ txSet ][ txType ]
 }
@@ -38237,7 +38186,7 @@ subexp_bools specifies the value of the parameter minus mk.">
     return x
 }
 
-&lt;p bs-line-number=21008&gt;decode_unsigned_4part(k, r) {
+&lt;p bs-line-number=21018&gt;decode_unsigned_4part(k, r) {
     mx = 1 &lt;&lt; k
     v = decode_4part( 6 - k )
     if ((r &lt;&lt; 1) &lt;= mx) {
@@ -38248,7 +38197,7 @@ subexp_bools specifies the value of the parameter minus mk.">
     return offset
 }&lt;/p&gt;
 
-&lt;p bs-line-number=21019&gt;decode_4part(num) {
+&lt;p bs-line-number=21029&gt;decode_4part(num) {
     S() wiener_ns_base;
     bits = 2 - num + Max(1, wiener_ns_base)
     offset = wiener_ns_base == 0 ? 0 : (1 &lt;&lt; bits)
@@ -43642,7 +43591,7 @@ than mk+a-1.</p>
         </div>
     </div>
     <footer class="syntax-browser-footer">
-        <p><a href="https://github.com/AOMediaCodec/av2-spec-internal" target="_blank">v13-public@cfd1e79</a></p>
+        <p><a href="https://github.com/AOMediaCodec/av2-spec-internal" target="_blank">v13-public@7181740</a></p>
     </footer>
     <script src="js/syntax_browser.js"></script>
 </body>
