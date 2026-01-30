@@ -34,14 +34,15 @@ For issues with the reference software, please use the [GitLab issue tracker](ht
 
 ## Providing Feedback
 
-We welcome feedback on the specification! Please use our GitHub issue templates to report problems or ask questions:
+We welcome feedback on the specification! Please send your comments, questions, or issue reports to:
 
-- **[Technical Issue](https://github.com/AOMediaCodec/av2-spec/issues/new?template=technical-issue.yml)** - Errors, ambiguities, or missing information in the spec
-- **[Editorial Issue](https://github.com/AOMediaCodec/av2-spec/issues/new?template=editorial-issue.yml)** - Typos, formatting, or consistency issues
-- **[Clarification Request](https://github.com/AOMediaCodec/av2-spec/issues/new?template=clarification-request.yml)** - Questions about interpretation or implementation
-- **[Syntax Browser Issue](https://github.com/AOMediaCodec/av2-spec/issues/new?template=syntax-browser-issue.yml)** - Issues with the syntax browser tool
+**[wg-codec-chair@aomedia.org](mailto:wg-codec-chair@aomedia.org)**
 
-**Before submitting**: Please search [existing issues](https://github.com/AOMediaCodec/av2-spec/issues) and check the [Release Notes](index.html#release-notes) for known issues.
+When reporting issues, please include:
+- Section number or specific location
+- Clear description of the issue or question
+
+**Before submitting**: Please check the [Release Notes](./v13_release_notes.pdf) for known issues.
 
 **Note**: This repository contains compiled specification outputs only. Responses may be limited as work continues toward the final AV2 specification release.
 
