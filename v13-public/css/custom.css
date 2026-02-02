@@ -92,7 +92,7 @@ table caption::before {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ddd;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: 'Fira Code', 'Source Code Pro', 'JetBrains Mono', 'Roboto Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
   font-size: 0.9em;
   background-color: #f8f9fa;
   margin-bottom: 1rem;
