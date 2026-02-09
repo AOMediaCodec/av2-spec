@@ -28,6 +28,16 @@
             border-bottom: 3px solid #12b17d;
         }
 
+        .av2-logo-left {
+            order: 0;
+            flex-shrink: 0;
+        }
+
+        .av2-logo {
+            height: 60px;
+            width: auto;
+        }
+
         .header-logo-link {
             order: 2;
             flex-shrink: 0;
@@ -268,7 +278,7 @@
                 gap: 1rem;
             }
 
-            .header-logo-link {
+            .av2-logo-left {
                 order: 1;
             }
 
@@ -276,6 +286,11 @@
                 order: 2;
             }
 
+            .header-logo-link {
+                order: 3;
+            }
+
+            .av2-logo,
             .header-logo {
                 height: 50px;
             }
@@ -309,13 +324,16 @@
 </head>
 <body>
     <header>
-        <a href="https://aomedia.org" target="_blank" rel="noopener noreferrer" class="header-logo-link">
-            <img src="aomedia_logo_rgb.svg" alt="AOMedia Logo" class="header-logo">
-        </a>
+        <div class="av2-logo-left">
+            <img src="av2-logo.svg" alt="AV2 Logo" class="av2-logo">
+        </div>
         <div class="header-content">
             <h1>AV2 Specification</h1>
             <p class="subtitle">Video Codec Working Group</p>
         </div>
+        <a href="https://aomedia.org" target="_blank" rel="noopener noreferrer" class="header-logo-link">
+            <img src="aomedia_logo_rgb.svg" alt="AOMedia Logo" class="header-logo">
+        </a>
     </header>
 
     <div class="content">
