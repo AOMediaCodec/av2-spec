@@ -1,0 +1,87 @@
+/**
+ * Paged.js Override CSS
+ *
+ * This file overrides print.css @page rules for Paged.js mode.
+ * It should be loaded AFTER print.css in the HTML.
+ *
+ * IMPORTANT: This file is only loaded during --pagedjs mode,
+ * not during regular --pdf mode.
+ */
+
+@media print {
+  /**
+   * CRITICAL: Override ALL @page margin box content from print.css
+   * These must be empty so JavaScript can control the content
+   */
+  @page {
+    /* Keep the same margins */
+    margin: 1.5cm 1.1cm;
+
+    /* Override print.css margin boxes - set to empty */
+    @top-left { content: "" !important; }
+    @top-center { content: "" !important; }
+    @top-right { content: "" !important; }
+    @bottom-left { content: "" !important; }
+    @bottom-center { content: "" !important; }
+    @bottom-right { content: "" !important; }
+  }
+
+  /**
+   * Hide any CSS-generated margin content that might slip through
+   */
+  .pagedjs_margin-content:empty {
+    display: none !important;
+  }
+
+  /**
+   * Remove excessive page breaks that create empty pages
+   */
+
+  /* TOC should not force a page break after - let content flow naturally */
+  #toc {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  nav#toc {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  /* Section 1 (Scope) should not force page break - it comes right after TOC */
+  h2#scope {
+    page-break-before: auto !important;
+    break-before: auto !important;
+  }
+
+  /**
+   * CRITICAL: Completely disable pdf-fixes.css table page break rules for Paged.js
+   * Both page-break-inside: auto and break-inside: avoid cause duplication in Paged.js
+   * Use unset to let Paged.js handle table breaking with its default algorithm
+   */
+
+  /* Reset table page break rules to defaults */
+  table {
+    break-inside: unset !important;
+    page-break-inside: unset !important;
+  }
+
+  /* Reset SDL syntax table page break rules */
+  .sdl-syntax-table {
+    break-inside: unset !important;
+    page-break-inside: unset !important;
+  }
+
+  /* Reset table row page break rules */
+  tr {
+    break-inside: unset !important;
+    page-break-inside: unset !important;
+    break-after: unset !important;
+    page-break-after: unset !important;
+  }
+
+  /* Keep table headers visible */
+  thead {
+    display: table-header-group !important;
+  }
+}

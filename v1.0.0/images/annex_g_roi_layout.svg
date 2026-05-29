@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-1 -1 961 589" width="961" height="589">
+  <defs/>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-1" y="-1" width="961" height="589"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <title>Text</title>
+        <text transform="translate(249.0039 -.3203125)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" fill="black" x="0" y="15" xml:space="preserve">Region-of-Interest Scalable Encoding - Sports Broadcast</tspan>
+        </text>
+      </g>
+      <g id="Group_3">
+        <g id="Graphic_20">
+          <title>Text</title>
+          <text transform="translate(50 48.759766)" fill="black">
+            <tspan font-family="Helvetica" font-size="12" fill="black" x="0" y="11" xml:space="preserve">Full Scene Output (1920x1080)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_19">
+          <rect x="50" y="70" width="800" height="450" fill="#b0bec5"/>
+          <rect x="50" y="70" width="800" height="450" stroke="#546e7a" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_18">
+          <title>Text</title>
+          <text transform="translate(382.1228 99.52979)" fill="#333">
+            <tspan font-family="Helvetica" font-size="11" fill="#333" x="0" y="10" xml:space="preserve">Stadium / Audience Context</tspan>
+          </text>
+        </g>
+        <g id="Graphic_17">
+          <title>Text</title>
+          <text transform="translate(374.68506 115.2998)" fill="#666">
+            <tspan font-family="Helvetica" font-size="10" fill="#666" x="0" y="10" xml:space="preserve">(Extended Layer 0 - Base Quality)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_16">
+          <rect x="210" y="160" width="480" height="270" fill="#4caf50"/>
+          <rect x="210" y="160" width="480" height="270" stroke="#2e7d32" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Graphic_15">
+          <title>Text</title>
+          <text transform="translate(365.97607 266.21973)" fill="white">
+            <tspan font-family="Helvetica" font-size="14" fill="white" x="0" y="14" xml:space="preserve">Field-of-Play (High Quality)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_14">
+          <title>Text</title>
+          <text transform="translate(406.88623 289.5298)" fill="white">
+            <tspan font-family="Helvetica" font-size="11" fill="white" x="0" y="10" xml:space="preserve">Extended Layer 1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_13">
+          <title>Text</title>
+          <text transform="translate(405.249 308.2998)" fill="white">
+            <tspan font-family="Helvetica" font-size="10" fill="white" x="0" y="10" xml:space="preserve">Enhancement Layer</tspan>
+          </text>
+        </g>
+        <g id="Graphic_12">
+          <title>Text</title>
+          <text transform="translate(406.64062 324.2998)" fill="white">
+            <tspan font-family="Helvetica" font-size="10" fill="white" x="0" y="10" xml:space="preserve">Position: (320, 180)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_11">
+          <title>Text</title>
+          <text transform="translate(398.5791 339.2998)" fill="white">
+            <tspan font-family="Helvetica" font-size="10" fill="white" x="0" y="10" xml:space="preserve">Size: 1280 x 720 pixels</tspan>
+          </text>
+        </g>
+        <g id="Graphic_10">
+          <title>Text</title>
+          <text transform="translate(388.5791 354.2998)" fill="white">
+            <tspan font-family="Helvetica" font-size="10" fill="white" x="0" y="10" xml:space="preserve">Higher bitrate, better quality</tspan>
+          </text>
+        </g>
+        <g id="Graphic_9">
+          <path d="M 210 160 L 190 145 L 170 145" stroke="#ff5722" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_8">
+          <title>Text</title>
+          <text transform="translate(99.26417 139.49824)" fill="#ff5722">
+            <tspan font-family="Helvetica" font-size="9" fill="#ff5722" x="0" y="9" xml:space="preserve">Overlay Region</tspan>
+          </text>
+        </g>
+        <g id="Line_7">
+          <line x1="50" y1="535" x2="850" y2="535" stroke="#333" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_6">
+          <title>Text</title>
+          <text transform="translate(427.23413 541.0698)" fill="black">
+            <tspan font-family="Helvetica" font-size="9" fill="black" x="0" y="9" xml:space="preserve">1920 pixels</tspan>
+          </text>
+        </g>
+        <g id="Line_5">
+          <line x1="865" y1="70" x2="865" y2="520" stroke="#333" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_4">
+          <title>Text</title>
+          <text transform="translate(885 291.06982)" fill="black">
+            <tspan font-family="Helvetica" font-size="9" fill="black" x="0" y="9" xml:space="preserve">1080 px</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_21">
+        <g id="Graphic_22">
+          <title>Text</title>
+          <text transform="translate(0 555.2998)" fill="black">
+            <tspan font-family="Helvetica" font-size="10" fill="black" x="0" y="10" xml:space="preserve">Rendering Scenarios:</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_23">
+        <g id="Graphic_26">
+          <rect x="0" y="575" width="12" height="12" fill="#4caf50"/>
+        </g>
+        <g id="Graphic_25">
+          <rect x="0" y="575" width="12" height="12" stroke="#b0bec5" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_24">
+          <title>Text</title>
+          <text transform="translate(18 576.0698)" fill="black">
+            <tspan font-family="Helvetica" font-size="9" fill="black" x="0" y="9" xml:space="preserve">High Bandwidth: Decode both layers (base + enhancement)</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_27">
+        <g id="Graphic_29">
+          <rect x="300" y="575" width="12" height="12" fill="#b0bec5"/>
+        </g>
+        <g id="Graphic_28">
+          <title>Text</title>
+          <text transform="translate(318 576.0698)" fill="black">
+            <tspan font-family="Helvetica" font-size="9" fill="black" x="0" y="9" xml:space="preserve">Constrained A: Decode only base (full scene, lower quality)</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_30">
+        <g id="Graphic_32">
+          <rect x="640" y="575" width="12" height="12" fill="#4caf50"/>
+        </g>
+        <g id="Graphic_31">
+          <title>Text</title>
+          <text transform="translate(658 576.0698)" fill="black">
+            <tspan font-family="Helvetica" font-size="9" fill="black" x="0" y="9" xml:space="preserve">Constrained B: Decode only enhancement (field only)</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_33">
+        <g id="Graphic_48">
+          <title>Text</title>
+          <text transform="translate(870 60.299805)" fill="#666">
+            <tspan font-family="Helvetica" font-size="10" fill="#666" x="0" y="10" xml:space="preserve">Atlas Mode:</tspan>
+          </text>
+        </g>
+        <g id="Graphic_47">
+          <title>Text</title>
+          <text transform="translate(870 74.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">Mode 0 (Enhanced Atlas)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_46">
+          <title>Text</title>
+          <text transform="translate(870 87.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">LCR Config (Layer 0):</tspan>
+          </text>
+        </g>
+        <g id="Graphic_45">
+          <title>Text</title>
+          <text transform="translate(875 100.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">type=TEXTURE</tspan>
+          </text>
+        </g>
+        <g id="Graphic_44">
+          <title>Text</title>
+          <text transform="translate(875 112.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">segment_id=0</tspan>
+          </text>
+        </g>
+        <g id="Graphic_43">
+          <title>Text</title>
+          <text transform="translate(875 124.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">priority=0 (background)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_42">
+          <title>Text</title>
+          <text transform="translate(870 144.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">LCR Config (Layer 1):</tspan>
+          </text>
+        </g>
+        <g id="Graphic_41">
+          <title>Text</title>
+          <text transform="translate(875 157.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">type=TEXTURE</tspan>
+          </text>
+        </g>
+        <g id="Graphic_40">
+          <title>Text</title>
+          <text transform="translate(875 169.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">segment_id=1</tspan>
+          </text>
+        </g>
+        <g id="Graphic_39">
+          <title>Text</title>
+          <text transform="translate(875 181.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">priority=1 (foreground)</tspan>
+          </text>
+        </g>
+        <g id="Graphic_38">
+          <title>Text</title>
+          <text transform="translate(870 201.06982)" fill="#666">
+            <tspan font-family="Helvetica" font-size="9" fill="#666" x="0" y="9" xml:space="preserve">Use Cases:</tspan>
+          </text>
+        </g>
+        <g id="Graphic_37">
+          <title>Text</title>
+          <text transform="translate(870 218.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">• Zoom into field</tspan>
+          </text>
+        </g>
+        <g id="Graphic_36">
+          <title>Text</title>
+          <text transform="translate(870 231.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">• Adaptive quality</tspan>
+          </text>
+        </g>
+        <g id="Graphic_35">
+          <title>Text</title>
+          <text transform="translate(870 244.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">• Bandwidth save</tspan>
+          </text>
+        </g>
+        <g id="Graphic_34">
+          <title>Text</title>
+          <text transform="translate(870 257.83984)" fill="#666">
+            <tspan font-family="Helvetica" font-size="8" fill="#666" x="0" y="8" xml:space="preserve">• Viewport-based</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
