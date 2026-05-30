@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-2 -1 903 804" width="903" height="804">
+  <defs/>
+  <g id="Canvas_1" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-2" y="-1" width="903" height="804"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <title>Text</title>
+        <text transform="translate(203.60474 -.550293)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="15" fill="#212529" x="0" y="15" xml:space="preserve">360° Viewport-Dependent Streaming: 3×3 Grid with Center Viewport</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="0" y="42" width="768" height="384" fill="#f8f9fa"/>
+        <rect x="0" y="42" width="768" height="384" stroke="#212529" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_4">
+        <title>Text</title>
+        <text transform="translate(287.38672 25.839844)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Atlas Canvas: 3840×1920 (Equirectangular Projection)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="2" y="44" width="254" height="126" fill="#e1f5fe"/>
+        <rect x="2" y="44" width="254" height="126" stroke="#0277bd" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_6">
+        <title>Text</title>
+        <text transform="translate(110.65503 51.529785)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <title>Text</title>
+        <text transform="translate(114.54688 66.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Top-Left</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <title>Text</title>
+        <text transform="translate(96.58398 78.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (0,0)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <title>Text</title>
+        <text transform="translate(112.10156 90.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Low Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <title>Text</title>
+        <text transform="translate(97.19922 105.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <title>Text</title>
+        <text transform="translate(101.97852 153.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="258" y="44" width="254" height="126" fill="#fff9c4"/>
+        <rect x="258" y="44" width="254" height="126" stroke="#f57f17" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_13">
+        <title>Text</title>
+        <text transform="translate(366.65503 51.529785)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <title>Text</title>
+        <text transform="translate(365.2129 66.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Top-Center</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <title>Text</title>
+        <text transform="translate(345.91016 78.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (1280,0)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <title>Text</title>
+        <text transform="translate(367.6582 90.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Med Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <title>Text</title>
+        <text transform="translate(353.1992 105.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <title>Text</title>
+        <text transform="translate(357.9785 153.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="514" y="44" width="252" height="126" fill="#e1f5fe"/>
+        <rect x="514" y="44" width="252" height="126" stroke="#0277bd" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_20">
+        <title>Text</title>
+        <text transform="translate(621.655 51.529785)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <title>Text</title>
+        <text transform="translate(622.88086 66.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Top-Right</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <title>Text</title>
+        <text transform="translate(600.91016 78.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (2560,0)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <title>Text</title>
+        <text transform="translate(623.10156 90.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Low Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <title>Text</title>
+        <text transform="translate(608.1992 105.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <title>Text</title>
+        <text transform="translate(612.9785 153.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <rect x="2" y="172" width="254" height="126" fill="#fff9c4"/>
+        <rect x="2" y="172" width="254" height="126" stroke="#f57f17" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_27">
+        <title>Text</title>
+        <text transform="translate(110.65503 179.52979)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <title>Text</title>
+        <text transform="translate(109.21289 194.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Middle-Left</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <title>Text</title>
+        <text transform="translate(92.13477 206.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (0,640)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <title>Text</title>
+        <text transform="translate(111.6582 218.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Med Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <title>Text</title>
+        <text transform="translate(97.19922 233.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <title>Text</title>
+        <text transform="translate(101.97852 281.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <rect x="258" y="172" width="254" height="126" fill="#c8e6c9"/>
+        <rect x="258" y="172" width="254" height="126" stroke="#2e7d32" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_34">
+        <title>Text</title>
+        <text transform="translate(332.2263 179.52979)" fill="#2e7d32">
+          <tspan font-family="Helvetica" font-size="11" fill="#2e7d32" x="0" y="10" xml:space="preserve">Layer 4 (VIEWPORT)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <title>Text</title>
+        <text transform="translate(372.99414 196.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Center</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <title>Text</title>
+        <text transform="translate(341.46094 208.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (1280,640)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <title>Text</title>
+        <text transform="translate(361.43945 222.83984)" fill="#2e7d32">
+          <tspan font-family="Helvetica" font-size="8" fill="#2e7d32" x="0" y="8" xml:space="preserve">HIGH Quality</tspan>
+        </text>
+      </g>
+      <g id="Group_38">
+        <g id="Graphic_44">
+          <rect x="305" y="256.27273" width="170" height="10" fill="#b3e5fc"/>
+          <rect x="305" y="256.27273" width="170" height="10" stroke="#0277bd" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_43">
+          <title>Text</title>
+          <text transform="translate(380.6604 257.8826)" fill="#212529">
+            <tspan font-family="Helvetica" font-size="7" fill="#212529" x="0" y="6" xml:space="preserve">Depth</tspan>
+          </text>
+        </g>
+        <g id="Graphic_42">
+          <rect x="302.5" y="246.1591" width="170" height="10" fill="#e1bee7"/>
+          <rect x="302.5" y="246.1591" width="170" height="10" stroke="#7b1fa2" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_41">
+          <title>Text</title>
+          <text transform="translate(378.54834 247.76895)" fill="#212529">
+            <tspan font-family="Helvetica" font-size="7" fill="#212529" x="0" y="6" xml:space="preserve">Alpha</tspan>
+          </text>
+        </g>
+        <g id="Graphic_40">
+          <rect x="300" y="237.18182" width="170" height="10" fill="#ffccbc"/>
+          <rect x="300" y="237.18182" width="170" height="10" stroke="#d84315" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_39">
+          <title>Text</title>
+          <text transform="translate(373.52246 238.79168)" fill="#212529">
+            <tspan font-family="Helvetica" font-size="7" fill="#212529" x="0" y="6" xml:space="preserve">Texture</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_45">
+        <title>Text</title>
+        <text transform="translate(357.9785 281.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <rect x="514" y="172" width="252" height="126" fill="#fff9c4"/>
+        <rect x="514" y="172" width="252" height="126" stroke="#f57f17" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_47">
+        <title>Text</title>
+        <text transform="translate(621.655 179.52979)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <title>Text</title>
+        <text transform="translate(617.5469 194.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Middle-Right</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <title>Text</title>
+        <text transform="translate(596.46094 206.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (2560,640)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <title>Text</title>
+        <text transform="translate(622.6582 218.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Med Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <title>Text</title>
+        <text transform="translate(608.1992 233.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <title>Text</title>
+        <text transform="translate(612.9785 281.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <rect x="2" y="300" width="254" height="124" fill="#e1f5fe"/>
+        <rect x="2" y="300" width="254" height="124" stroke="#0277bd" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_54">
+        <title>Text</title>
+        <text transform="translate(110.65503 307.5298)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <title>Text</title>
+        <text transform="translate(108.32422 322.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Bottom-Left</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <title>Text</title>
+        <text transform="translate(89.91016 334.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (0,1280)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <title>Text</title>
+        <text transform="translate(112.10156 346.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Low Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <title>Text</title>
+        <text transform="translate(97.19922 361.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <title>Text</title>
+        <text transform="translate(101.97852 407.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <rect x="258" y="300" width="254" height="124" fill="#fff9c4"/>
+        <rect x="258" y="300" width="254" height="124" stroke="#f57f17" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_61">
+        <title>Text</title>
+        <text transform="translate(366.65503 307.5298)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_62">
+        <title>Text</title>
+        <text transform="translate(358.99023 322.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Bottom-Center</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <title>Text</title>
+        <text transform="translate(339.23633 334.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (1280,1280)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_64">
+        <title>Text</title>
+        <text transform="translate(367.6582 346.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Med Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_65">
+        <title>Text</title>
+        <text transform="translate(353.1992 361.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <title>Text</title>
+        <text transform="translate(357.9785 407.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <rect x="514" y="300" width="252" height="124" fill="#e1f5fe"/>
+        <rect x="514" y="300" width="252" height="124" stroke="#0277bd" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_68">
+        <title>Text</title>
+        <text transform="translate(621.655 307.5298)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="11" fill="#212529" x="0" y="10" xml:space="preserve">Layer 8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <title>Text</title>
+        <text transform="translate(616.6582 322.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Bottom-Right</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <title>Text</title>
+        <text transform="translate(615.1055 334.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">(Back-Facing)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <title>Text</title>
+        <text transform="translate(594.2363 346.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">1280×640 @ (2560,1280)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <title>Text</title>
+        <text transform="translate(623.10156 359.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Low Qual</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <title>Text</title>
+        <text transform="translate(608.1992 374.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">Tex+Alpha+Depth</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <title>Text</title>
+        <text transform="translate(612.9785 407.83984)" fill="#424242">
+          <tspan font-family="Helvetica" font-size="8" fill="#424242" x="0" y="8" xml:space="preserve">atlas_seg_id=8</tspan>
+        </text>
+      </g>
+      <g id="Line_75">
+        <line x1="0" y1="442" x2="768" y2="442" stroke="#dc3545" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Graphic_76">
+        <path d="M 0 442 L 5 439 L 5 445 Z" fill="#dc3545"/>
+      </g>
+      <g id="Graphic_77">
+        <path d="M 768 442 L 763 439 L 763 445 Z" fill="#dc3545"/>
+      </g>
+      <g id="Graphic_78">
+        <title>Text</title>
+        <text transform="translate(361.23413 448.0698)" fill="#dc3545">
+          <tspan font-family="Helvetica" font-size="9" fill="#dc3545" x="0" y="9" xml:space="preserve">3840 pixels</tspan>
+        </text>
+      </g>
+      <g id="Line_79">
+        <line x1="783" y1="42" x2="783" y2="426" stroke="#dc3545" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Graphic_80">
+        <path d="M 783 42 L 780 47 L 786 47 Z" fill="#dc3545"/>
+      </g>
+      <g id="Graphic_81">
+        <path d="M 783 426 L 780 421 L 786 421 Z" fill="#dc3545"/>
+      </g>
+      <g id="Graphic_82">
+        <title>Text</title>
+        <text transform="translate(828.9302 219.23413) rotate(90)" fill="#dc3545">
+          <tspan font-family="Helvetica" font-size="9" fill="#dc3545" x="0" y="9" xml:space="preserve">1920 pixels</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <rect x="0" y="472" width="445" height="125" fill="#fff3cd"/>
+        <rect x="0" y="472" width="445" height="125" stroke="#856404" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Graphic_84">
+        <title>Text</title>
+        <text transform="translate(145.48828 481.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Symmetrical 3×3 Grid with Center Viewport</tspan>
+        </text>
+      </g>
+      <g id="Graphic_85">
+        <title>Text</title>
+        <text transform="translate(10 498.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Layout: 9 subpictures in 3 columns × 3 rows (1280×640 each) completely cover 3840×1920 canvas</tspan>
+        </text>
+      </g>
+      <g id="Graphic_86">
+        <title>Text</title>
+        <text transform="translate(10 513.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Center viewport: Layer 4 at position (1,1) encoded at HIGH quality for front-facing view</tspan>
+        </text>
+      </g>
+      <g id="Graphic_87">
+        <title>Text</title>
+        <text transform="translate(10 528.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Adjacent subpictures: Layers 1, 3, 5, 7 (top/left/right/bottom of center) at medium quality</tspan>
+        </text>
+      </g>
+      <g id="Graphic_88">
+        <title>Text</title>
+        <text transform="translate(10 543.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Corner subpictures: Layers 0, 2, 6, 8 at low quality (peripheral and back-facing regions)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_89">
+        <title>Text</title>
+        <text transform="translate(10 558.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Perfect symmetry: Equal granularity horizontally and vertically; natural center positioning</tspan>
+        </text>
+      </g>
+      <g id="Graphic_90">
+        <title>Text</title>
+        <text transform="translate(10 573.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Complete coverage: No gaps; content available for any viewing direction</tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <rect x="455" y="472" width="445" height="125" fill="#fff3cd"/>
+        <rect x="455" y="472" width="445" height="125" stroke="#856404" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Graphic_92">
+        <title>Text</title>
+        <text transform="translate(594.0723 481.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Layer Configuration (LCR Required - 9 Layers)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_93">
+        <title>Text</title>
+        <text transform="translate(465 498.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Each extended layer contains 3 embedded layers:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <title>Text</title>
+        <text transform="translate(475 515.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Embedded layer 0: Texture (TEXTURE_LAYER) - video content</tspan>
+        </text>
+      </g>
+      <g id="Graphic_95">
+        <title>Text</title>
+        <text transform="translate(475 530.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Embedded layer 1: Alpha (AUX_LAYER, ALPHA_AUX) - smooth blending</tspan>
+        </text>
+      </g>
+      <g id="Graphic_96">
+        <title>Text</title>
+        <text transform="translate(475 545.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Embedded layer 2: Depth (AUX_LAYER, DEPTH_AUX) - parallax rendering</tspan>
+        </text>
+      </g>
+      <g id="Graphic_97">
+        <title>Text</title>
+        <text transform="translate(465 565.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">All subpictures share lcr_view_id = 0 (single 360° view)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_98">
+        <title>Text</title>
+        <text transform="translate(465 580.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">MSDO cannot be used (limited to 4 streams); requires LCR for 9 layers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_99">
+        <rect x="0" y="607" width="900" height="195" fill="#fff3cd"/>
+        <rect x="0" y="607" width="900" height="195" stroke="#856404" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Graphic_100">
+        <title>Text</title>
+        <text transform="translate(372.0254 616.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">Key Benefits of 3×3 Grid for 360° Streaming</tspan>
+        </text>
+      </g>
+      <g id="Graphic_101">
+        <title>Text</title>
+        <text transform="translate(10 636.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Symmetrical coverage: 3×3 grid provides equal horizontal and vertical granularity (better than 3×2 or 2×3)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_102">
+        <title>Text</title>
+        <text transform="translate(10 651.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Natural center viewport: Center subpicture (1,1) is the obvious front-facing position surrounded by 8 adjacent subpictures</tspan>
+        </text>
+      </g>
+      <g id="Graphic_103">
+        <title>Text</title>
+        <text transform="translate(10 666.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Complete corner coverage: All 4 corners explicitly covered (0=top-left, 2=top-right, 6=bottom-left, 8=bottom-right)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <title>Text</title>
+        <text transform="translate(10 681.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Bandwidth efficiency: Fetch high-quality center + visible adjacent subpictures only (60-80% reduction vs full sphere)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <title>Text</title>
+        <text transform="translate(10 696.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Quality adaptation: Center at high (1280×640), adjacent at medium, corners at low - matches viewport importance</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <title>Text</title>
+        <text transform="translate(10 711.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Smooth transitions: Alpha channels eliminate visible seams; enables quality feathering between subpictures</tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <title>Text</title>
+        <text transform="translate(10 726.83984)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• 3D-aware rendering: Depth maps enable motion parallax, view synthesis for missing subpictures, occlusion handling</tspan>
+        </text>
+      </g>
+      <g id="Graphic_108">
+        <title>Text</title>
+        <text transform="translate(10 741.8398)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Dynamic streaming: As user rotates, fetch different subpictures with priority based on viewing direction</tspan>
+        </text>
+      </g>
+      <g id="Graphic_109">
+        <title>Text</title>
+        <text transform="translate(10 756.8398)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Better aspect ratio: 1280×640 subpictures (~2:1) more natural for equirectangular content than taller subpictures</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <title>Text</title>
+        <text transform="translate(10 771.8398)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Independent decoding: Each extended layer independently decodable; no inter-subpicture dependencies</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <title>Text</title>
+        <text transform="translate(10 786.8398)" fill="#212529">
+          <tspan font-family="Helvetica" font-size="8" fill="#212529" x="0" y="8" xml:space="preserve">• Scalable quality: Can adjust per-subpicture encoding parameters based on importance without changing structure</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

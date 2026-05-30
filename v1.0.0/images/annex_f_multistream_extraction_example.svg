@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" width="1100" height="750">
+  <!-- Title -->
+  <text x="550" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    Multistream Sub-bitstream Extraction Example
+  </text>
+
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="20" y="40" width="1060" height="70" fill="#f5f5f5" stroke="#999" stroke-width="1" rx="3"/>
+    <text x="30" y="60" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Legend:</text>
+
+    <rect x="30" y="70" width="40" height="18" fill="#9e9e9e" stroke="#666" stroke-width="1"/>
+    <text x="75" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">TD</text>
+
+    <rect x="110" y="70" width="40" height="18" fill="#7e57c2" stroke="#512da8" stroke-width="1"/>
+    <text x="155" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">Global LCR</text>
+
+    <rect x="230" y="70" width="40" height="18" fill="#ab47bc" stroke="#7b1fa2" stroke-width="1"/>
+    <text x="275" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">Global OPS</text>
+
+    <rect x="360" y="70" width="40" height="18" fill="#26a69a" stroke="#00897b" stroke-width="1"/>
+    <text x="405" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">SH</text>
+
+    <rect x="460" y="70" width="40" height="18" fill="#5c6bc0" stroke="#3949ab" stroke-width="1"/>
+    <text x="505" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">Local LCR</text>
+
+    <rect x="590" y="70" width="40" height="18" fill="#42a5f5" stroke="#1976d2" stroke-width="1"/>
+    <text x="635" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">Local OPS</text>
+
+    <rect x="730" y="70" width="40" height="18" fill="#66bb6a" stroke="#388e3c" stroke-width="1"/>
+    <text x="775" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">Frame(xId:0)</text>
+
+    <rect x="860" y="70" width="40" height="18" fill="#ffa726" stroke="#f57c00" stroke-width="1"/>
+    <text x="905" y="82" font-family="Arial, sans-serif" font-size="9" fill="#333">Frame(xId:1)</text>
+
+    <rect x="990" y="70" width="40" height="18" fill="none" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="1035" y="82" font-family="Arial, sans-serif" font-size="9" fill="#d32f2f">Dropped</text>
+
+    <text x="30" y="100" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      Frame format: [xId:mId:tId] where x=extended, m=embedded, t=temporal layer ID
+    </text>
+  </g>
+
+  <!-- Input Bitstream -->
+  <text x="20" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d47a1">
+    Input Multistream Bitstream:
+  </text>
+
+  <!-- Temporal Unit 1 (tId=0) -->
+  <g id="tu1-input">
+    <text x="30" y="165" font-family="Arial, sans-serif" font-size="10" fill="#666">TU 1 (t=0):</text>
+
+    <!-- Global OBUs -->
+    <rect x="100" y="150" width="30" height="22" fill="#9e9e9e" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="115" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">TD</text>
+
+    <rect x="135" y="150" width="45" height="22" fill="#7e57c2" stroke="#512da8" stroke-width="1" rx="2"/>
+    <text x="157" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">G-LCR</text>
+
+    <rect x="185" y="150" width="45" height="22" fill="#ab47bc" stroke="#7b1fa2" stroke-width="1" rx="2"/>
+    <text x="207" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">G-OPS</text>
+
+    <!-- All Local LCRs together -->
+    <rect x="235" y="150" width="40" height="22" fill="#5c6bc0" stroke="#3949ab" stroke-width="1" rx="2"/>
+    <text x="255" y="158" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">LCR</text>
+    <text x="255" y="166" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[0]</text>
+
+    <rect x="280" y="150" width="40" height="22" fill="#5c6bc0" stroke="#3949ab" stroke-width="1" rx="2"/>
+    <text x="300" y="158" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">LCR</text>
+    <text x="300" y="166" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[1]</text>
+
+    <!-- All Sequence Headers together -->
+    <rect x="325" y="150" width="35" height="22" fill="#26a69a" stroke="#00897b" stroke-width="1" rx="2"/>
+    <text x="342" y="158" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">SH</text>
+    <text x="342" y="166" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[0]</text>
+
+    <rect x="365" y="150" width="35" height="22" fill="#26a69a" stroke="#00897b" stroke-width="1" rx="2"/>
+    <text x="382" y="158" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">SH</text>
+    <text x="382" y="166" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[1]</text>
+
+    <!-- Extended layer 0 content -->
+    <rect x="405" y="150" width="40" height="22" fill="#42a5f5" stroke="#1976d2" stroke-width="1" rx="2"/>
+    <text x="425" y="158" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">OPS</text>
+    <text x="425" y="166" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[0]</text>
+
+    <rect x="450" y="150" width="42" height="22" fill="#66bb6a" stroke="#388e3c" stroke-width="1.5" rx="2"/>
+    <text x="471" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:0:0]</text>
+
+    <rect x="497" y="150" width="42" height="22" fill="#66bb6a" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="518" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:1:0]</text>
+
+    <!-- Extended layer 1 content -->
+    <rect x="544" y="150" width="42" height="22" fill="#ffa726" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="565" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[1:0:0]</text>
+
+    <rect x="591" y="150" width="42" height="22" fill="#ffa726" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="612" y="164" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[1:1:0]</text>
+  </g>
+
+  <!-- Temporal Unit 2 (tId=1) -->
+  <g id="tu2-input">
+    <text x="30" y="195" font-family="Arial, sans-serif" font-size="10" fill="#666">TU 2 (t=1):</text>
+
+    <rect x="100" y="180" width="30" height="22" fill="#9e9e9e" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="115" y="194" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">TD</text>
+
+    <!-- Extended layer 0 -->
+    <rect x="135" y="180" width="42" height="22" fill="#66bb6a" stroke="#388e3c" stroke-width="1.5" rx="2"/>
+    <text x="156" y="194" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:0:1]</text>
+
+    <rect x="182" y="180" width="42" height="22" fill="#66bb6a" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="203" y="194" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:1:1]</text>
+
+    <!-- Extended layer 1 -->
+    <rect x="229" y="180" width="42" height="22" fill="#ffa726" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="250" y="194" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[1:0:1]</text>
+  </g>
+
+  <!-- Temporal Unit 3 (tId=0 again) -->
+  <g id="tu3-input">
+    <text x="30" y="225" font-family="Arial, sans-serif" font-size="10" fill="#666">TU 3 (t=0):</text>
+
+    <rect x="100" y="210" width="30" height="22" fill="#9e9e9e" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="115" y="224" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">TD</text>
+
+    <!-- Extended layer 0 -->
+    <rect x="135" y="210" width="42" height="22" fill="#66bb6a" stroke="#388e3c" stroke-width="1.5" rx="2"/>
+    <text x="156" y="224" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:0:0]</text>
+
+    <rect x="182" y="210" width="42" height="22" fill="#66bb6a" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="203" y="224" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:1:0]</text>
+
+    <!-- Extended layer 1 -->
+    <rect x="229" y="210" width="42" height="22" fill="#ffa726" stroke="#d32f2f" stroke-width="2" stroke-dasharray="3,2" rx="2"/>
+    <text x="250" y="224" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[1:0:0]</text>
+  </g>
+
+  <!-- Arrow and extraction box -->
+  <line x1="350" y1="250" x2="350" y2="280" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <rect x="200" y="280" width="300" height="140" fill="#fff3e0" stroke="#ff6f00" stroke-width="2.5" rx="5"/>
+  <text x="350" y="305" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#e65100">
+    Multistream Extraction
+  </text>
+  <text x="350" y="325" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">
+    Global Operating Point Selected:
+  </text>
+  <rect x="220" y="335" width="260" height="75" fill="#fafafa" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="350" y="352" font-family="Courier, monospace" font-size="9" text-anchor="middle" fill="#333">
+    ops_xlayer_map[opsId][opIdx] = 0x0001
+  </text>
+  <text x="350" y="367" font-family="Courier, monospace" font-size="9" text-anchor="middle" fill="#333">
+    ops_mlayer_map[31][opsId][opIdx][0] = 0x01
+  </text>
+  <text x="350" y="382" font-family="Courier, monospace" font-size="9" text-anchor="middle" fill="#333">
+    ops_tlayer_map[31][opsId][opIdx][0][0] = 0x03
+  </text>
+  <text x="350" y="400" font-family="Arial, sans-serif" font-size="8" font-style="italic" text-anchor="middle" fill="#666">
+    (Retain: xId=0, mId=0, tId=0 or tId=1)
+  </text>
+
+  <line x1="350" y1="430" x2="350" y2="460" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Output Bitstream -->
+  <text x="20" y="485" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1b5e20">
+    Output Sub-bitstream:
+  </text>
+
+  <!-- TU 1 output -->
+  <g id="tu1-output">
+    <text x="30" y="510" font-family="Arial, sans-serif" font-size="10" fill="#666">TU 1 (t=0):</text>
+
+    <rect x="100" y="495" width="30" height="22" fill="#9e9e9e" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="115" y="509" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">TD</text>
+
+    <rect x="135" y="495" width="45" height="22" fill="#7e57c2" stroke="#512da8" stroke-width="1" rx="2"/>
+    <text x="157" y="509" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">G-LCR</text>
+
+    <rect x="185" y="495" width="45" height="22" fill="#ab47bc" stroke="#7b1fa2" stroke-width="1" rx="2"/>
+    <text x="207" y="509" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">G-OPS</text>
+
+    <!-- Only LCR for xId=0 retained -->
+    <rect x="235" y="495" width="40" height="22" fill="#5c6bc0" stroke="#3949ab" stroke-width="1" rx="2"/>
+    <text x="255" y="503" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">LCR</text>
+    <text x="255" y="511" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[0]</text>
+
+    <!-- Only SH for xId=0 retained -->
+    <rect x="280" y="495" width="35" height="22" fill="#26a69a" stroke="#00897b" stroke-width="1" rx="2"/>
+    <text x="297" y="503" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">SH</text>
+    <text x="297" y="511" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[0]</text>
+
+    <rect x="320" y="495" width="40" height="22" fill="#42a5f5" stroke="#1976d2" stroke-width="1" rx="2"/>
+    <text x="340" y="503" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">OPS</text>
+    <text x="340" y="511" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="white">[0]</text>
+
+    <rect x="365" y="495" width="42" height="22" fill="#66bb6a" stroke="#388e3c" stroke-width="1.5" rx="2"/>
+    <text x="386" y="509" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:0:0]</text>
+  </g>
+
+  <!-- TU 2 output -->
+  <g id="tu2-output">
+    <text x="30" y="540" font-family="Arial, sans-serif" font-size="10" fill="#666">TU 2 (t=1):</text>
+
+    <rect x="100" y="525" width="30" height="22" fill="#9e9e9e" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="115" y="539" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">TD</text>
+
+    <rect x="135" y="525" width="42" height="22" fill="#66bb6a" stroke="#388e3c" stroke-width="1.5" rx="2"/>
+    <text x="156" y="539" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:0:1]</text>
+  </g>
+
+  <!-- TU 3 output -->
+  <g id="tu3-output">
+    <text x="30" y="570" font-family="Arial, sans-serif" font-size="10" fill="#666">TU 3 (t=0):</text>
+
+    <rect x="100" y="555" width="30" height="22" fill="#9e9e9e" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="115" y="569" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">TD</text>
+
+    <rect x="135" y="555" width="42" height="22" fill="#66bb6a" stroke="#388e3c" stroke-width="1.5" rx="2"/>
+    <text x="156" y="569" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="white">[0:0:0]</text>
+  </g>
+
+  <!-- Annotations -->
+  <g id="annotations">
+    <rect x="720" y="150" width="360" height="430" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="4"/>
+
+    <text x="900" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+      Key Points
+    </text>
+
+    <text x="735" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0d47a1">
+      Input Bitstream:
+    </text>
+    <text x="745" y="218" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • 2 extended layers (xId: 0, 1)
+    </text>
+    <text x="745" y="233" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • 2 embedded layers per xId (mId: 0, 1)
+    </text>
+    <text x="745" y="248" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • 2 temporal layers (tId: 0, 1)
+    </text>
+    <text x="745" y="263" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • TU 1: Contains tId=0 frames
+    </text>
+    <text x="745" y="278" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • TU 2: Contains tId=1 frames
+    </text>
+    <text x="745" y="293" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • TU 3: Contains tId=0 frames
+    </text>
+
+    <text x="735" y="320" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0d47a1">
+      OBU Ordering per TU:
+    </text>
+    <text x="745" y="338" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      1. Temporal Delimiter (TD)
+    </text>
+    <text x="745" y="353" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      2. Global LCR (first TU only)
+    </text>
+    <text x="745" y="368" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      3. Global OPS (optional)
+    </text>
+    <text x="745" y="383" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      4. All Local LCRs (one per xId)
+    </text>
+    <text x="745" y="398" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      5. All Sequence Headers (one per xId)
+    </text>
+    <text x="745" y="413" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      6. For each extended layer:
+    </text>
+    <text x="755" y="428" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      - Local OPS (optional)
+    </text>
+    <text x="755" y="443" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      - Frames (all embedded layers)
+    </text>
+
+    <text x="735" y="470" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1b5e20">
+      Output Result:
+    </text>
+    <text x="745" y="488" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • Only xId=0 retained
+    </text>
+    <text x="745" y="503" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • Only mId=0 retained
+    </text>
+    <text x="745" y="518" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • Only tId=0,1 retained
+    </text>
+    <text x="745" y="533" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • All TDs preserved
+    </text>
+    <text x="745" y="548" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • Global LCR/OPS preserved
+    </text>
+    <text x="745" y="563" font-family="Arial, sans-serif" font-size="9" fill="#333">
+      • Only SH/LCR/OPS for xId=0
+    </text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="550" y="620" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#666">
+    Note: All Local LCRs and all Sequence Headers are grouped together after Global OBUs, before per-layer Local OPS and frames.
+  </text>
+  <text x="550" y="635" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#666">
+    Frames in same temporal unit from same extended/embedded layer have the same temporal layer ID.
+  </text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
